@@ -2857,6 +2857,8 @@ Filger_Spells = {
 			--BETA {spellID = 8056, unitID = "target", caster = "player", filter = "DEBUFF"},
 			-- Earthgrab
 			{spellID = 64695, unitID = "target", caster = "player", filter = "DEBUFF"},
+			-- 火焰震击
+			{spellID = 188389, unitID = "target", caster = "player", filter = "DEBUFF"},
 
 			-- Trinket Effects
 			-- Mark of Doom [Prophecy of Fear]
