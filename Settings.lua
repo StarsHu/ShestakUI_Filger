@@ -69,12 +69,12 @@ if IsAddOnLoaded("ShestakUI") then
 else
 	-- 设置(初次调整 位置,图标大小等, 请对照主楼置顶的标注图)
 	FilgerPositions = {
-		player_buff_icon = {"BOTTOMRIGHT", UIParent, "CENTER", -180, -80},	-- "P_BUFF_ICON"		(player_buff_icon 位置坐标 - 主图标注号 1)
-		player_proc_icon = {"BOTTOMLEFT", UIParent, "CENTER", 180, -80},	-- "P_PROC_ICON"		(player_proc_icon 位置坐标 - 主图标注号 2)
-		special_proc_icon = {"BOTTOMRIGHT", UIParent, "CENTER", -180, -40},	-- "SPECIAL_P_BUFF_ICON"	(special_proc_icon 位置坐标 - 主图标注号 3)
-		target_debuff_icon = {"BOTTOMLEFT", UIParent, "CENTER", 180, -40},	-- "T_DEBUFF_ICON"		(target_debuff_icon 位置坐标 - 主图标注号 4)
-		target_buff_icon = {"BOTTOMLEFT", UIParent, "CENTER", 180, 0},		-- "T_BUFF"				(target_buff_icon 位置坐标 - 主图标注号 5)
-		pve_debuff = {"BOTTOMRIGHT", UIParent, "CENTER", -180, 0},			-- "PVE/PVP_DEBUFF"		(pve_debuff 位置坐标 - 主图标注号 6)
+		player_buff_icon = {"TOPRIGHT", UIParent, "CENTER", -150, -82},	-- "P_BUFF_ICON"		(player_buff_icon 位置坐标 - 主图标注号 1)
+		player_proc_icon = {"TOPRIGHT", UIParent, "CENTER", -150, -32},	-- "P_PROC_ICON"		(player_proc_icon 位置坐标 - 主图标注号 2)
+		special_proc_icon = {"TOPRIGHT", UIParent, "CENTER", -150, 0},	-- "SPECIAL_P_BUFF_ICON"	(special_proc_icon 位置坐标 - 主图标注号 3)
+		target_debuff_icon = {"TOPLEFT", UIParent, "CENTER", 150, -32},	-- "T_DEBUFF_ICON"		(target_debuff_icon 位置坐标 - 主图标注号 4)
+		target_buff_icon = {"BOTTOMLEFT", UIParent, "CENTER", 150, 2},		-- "T_BUFF"				(target_buff_icon 位置坐标 - 主图标注号 5)
+		pve_debuff = {"BOTTOMRIGHT", UIParent, "CENTER", -150, 2},			-- "PVE/PVP_DEBUFF"		(pve_debuff 位置坐标 - 主图标注号 6)
 		pve_cc = {"TOPLEFT", UIParent, "LEFT", 50, 0},						-- "PVE/PVP_CC"			(pve_cc 位置坐标 - 主图标注号 7)
 		cooldown = {"TOPLEFT", UIParent, "CENTER", -90, -120},				-- "COOLDOWN"			(cooldown 位置坐标 - 主图标注号 8)
 		target_bar = {"TOPRIGHT", UIParent, "RIGHT", -260, 0},				-- "T_DE/BUFF_BAR"		(target_bar 位置坐标 - 主图标注号 9)
