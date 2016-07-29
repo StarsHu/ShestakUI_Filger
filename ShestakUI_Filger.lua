@@ -1,5 +1,5 @@
-﻿local _, sakaras = ...
-local Misc = sakaras.Misc
+﻿local _, ns = ...
+local Misc = ns.Misc
 --	Misc.back = Misc.Media.."back"
 	Misc.border = Misc.Media.."White"
 	Misc.barbg = Misc.Media.."Texture"
@@ -323,7 +323,7 @@ function Filger:DisplayActives()
 	end
 end
 
-function Filger:OnEvent(event, unit)
+function Filger:OnEvent(event, unit, _, _, _, spellID)
 	if event == "SPELL_UPDATE_COOLDOWN" or event == "PLAYER_TARGET_CHANGED" or event == "PLAYER_FOCUS_CHANGED" or event == "PLAYER_ENTERING_WORLD" or event == "UNIT_AURA" and (unit == "target" or unit == "player" or unit == "pet" or unit == "focus") or (event == "UNIT_SPELLCAST_SUCCEEDED" and unit == "player") then
 		local ptt = GetSpecialization()
 		local needUpdate = false
@@ -338,30 +338,36 @@ function Filger:OnEvent(event, unit)
 			if data.filter == "BUFF" and (not data.spec or data.spec == ptt) then
 				local caster, spn, expirationTime
 				spn, _, _ = GetSpellInfo(data.spellID)
-				name, _, icon, count, _, duration, expirationTime, caster, _, _, spid = Filger:UnitBuff(data.unitID, data.spellID, spn, data.absID)
-				if name and (data.caster ~= 1 and (caster == data.caster or data.caster == "all") or MyUnits[caster]) then
-					if not data.count or count >= data.count then
-						start = expirationTime - duration
-						found = true
+				if spn then
+					name, _, icon, count, _, duration, expirationTime, caster, _, _, spid = Filger:UnitBuff(data.unitID, data.spellID, spn, data.absID)
+					if name and (data.caster ~= 1 and (caster == data.caster or data.caster == "all") or MyUnits[caster]) then
+						if not data.count or count >= data.count then
+							start = expirationTime - duration
+							found = true
+						end
 					end
 				end
 			elseif data.filter == "DEBUFF" and (not data.spec or data.spec == ptt) then
 				local caster, spn, expirationTime
 				spn, _, _ = GetSpellInfo(data.spellID)
-				name, _, icon, count, _, duration, expirationTime, caster, _, _, spid = Filger:UnitDebuff(data.unitID, data.spellID, spn, data.absID)
-				if name and (data.caster ~= 1 and (caster == data.caster or data.caster == "all") or MyUnits[caster]) then
-					start = expirationTime - duration
-					found = true
+				if spn then
+					name, _, icon, count, _, duration, expirationTime, caster, _, _, spid = Filger:UnitDebuff(data.unitID, data.spellID, spn, data.absID)
+					if name and (data.caster ~= 1 and (caster == data.caster or data.caster == "all") or MyUnits[caster]) then
+						start = expirationTime - duration
+						found = true
+					end
 				end
 			elseif data.filter == "CD" and (not data.spec or data.spec == ptt) then
 				if data.spellID then
 					name, _, icon = GetSpellInfo(data.spellID)
-					if data.absID then
-						start, duration = GetSpellCooldown(data.spellID)
-					else
-						start, duration = GetSpellCooldown(name)
+					if name then
+						if data.absID then
+							start, duration = GetSpellCooldown(data.spellID)
+						else
+							start, duration = GetSpellCooldown(name)
+						end
+						spid = data.spellID
 					end
-					spid = data.spellID
 				elseif data.slotID then
 					spid = data.slotID
 					local slotLink = GetInventoryItemLink("player", data.slotID)
@@ -377,11 +383,15 @@ function Filger:OnEvent(event, unit)
 				if data.trigger == "BUFF" then
 					local spn
 					spn, _, icon = GetSpellInfo(data.spellID)
-					name, _, _, _, _, _, _, _, _, _, spid = Filger:UnitBuff("player", data.spellID, spn, data.absID)
+					if spn then
+						name, _, _, _, _, _, _, _, _, _, spid = Filger:UnitBuff("player", data.spellID, spn, data.absID)
+					end
 				elseif data.trigger == "DEBUFF" then
 					local spn
 					spn, _, icon = GetSpellInfo(data.spellID)
-					name, _, _, _, _, _, _, _, _, _, spid = Filger:UnitDebuff("player", data.spellID, spn, data.absID)
+					if spn then
+						name, _, _, _, _, _, _, _, _, _, spid = Filger:UnitDebuff("player", data.spellID, spn, data.absID)
+					end
 				elseif data.trigger == "NONE" and event == "UNIT_SPELLCAST_SUCCEEDED" then
 					if spellID == data.spellID then
 						name, _, icon = GetSpellInfo(data.spellID)

@@ -1,5 +1,5 @@
-local _, sakaras = ...
-local Misc = sakaras.Misc
+local _, ns = ...
+local Misc = ns.Misc
 
 Filger_Spells = {
 	["DEATHKNIGHT"] = {		--[死骑]

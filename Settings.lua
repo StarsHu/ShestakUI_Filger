@@ -30,16 +30,18 @@ Misc.barIconSize = 26			-- 计时条上的图标大小 - (主图标注号 7,9)
 Misc.Interval = 3				-- 间距
 
 -------------------------------------------------------- 
-getscreenheight = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)")) 
-getscreenwidth = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "(%d+)x+%d")) 
 
---   Pixel perfect script of custom ui Scale 
-UIScale = function() 
-   uiscale = min(2, max(0.64, 768 / string.match(GetCVar("gxWindowedResolution"), "%d+x(%d+)"))) 
-end 
-UIScale() 
 
-local mult = 768 / string.match(GetCVar("gxWindowedResolution"), "%d+x(%d+)") / uiscale 
+
+--   Pixel perfect script of custom ui Scale
+local resolution = ({GetScreenResolutions()})[GetCurrentResolution()] or GetCVar("gxWindowedResolution")
+
+UIScale = function()
+   uiscale = min(2, max(0.64, 768 / string.match(resolution, "%d+x(%d+)")))
+end
+UIScale()
+
+local mult = 768 / string.match(resolution, "%d+x(%d+)") / uiscale
 local Scale = function(x) 
    return mult * math.floor(x / mult + 0.5) 
 end 
@@ -47,8 +49,8 @@ Misc.mult = mult
 ----------------------- ShestakUI_Filger_1px -----------------------
 
 -- 命名
-local _, sakaras = ...
-sakaras.Misc = Misc
+local _, ns = ...
+ns.Misc = Misc
 
 -- 位置
 if IsAddOnLoaded("ShestakUI") then
