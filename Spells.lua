@@ -2911,11 +2911,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -2925,60 +2925,8 @@ Filger_Spells = {
 			{spellID = 117828, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Demonic Synergy
 			{spellID = 171982, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Trinkets
-			-- 1.0: Darkmoon Cards
-			-- Nightmare Fire (Crit, Proc)
-			{spellID = 162919, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.1: Alchemy Stones
-			-- Intellect
-			{spellID = 60234, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.2: Hallow's End
-			-- Mithril Wristwatch (Spell Power, Proc)
-			{spellID = 127924, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 2.0: PvP Trinkets
-			-- Battlemaster (Health, Use)
-			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Damage [Intellect] (Versatility, Use)
-			{spellID = 182073, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Damage [Intellect] (Versatility, Proc)
-			{spellID = 182058, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Heirlooms
-			-- Orb Of Voidsight (Haste, Proc)
-			{spellID = 201410, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Damage [Intellect]
-			-- Blackiron Micro Crucible (Multistrike, Proc)
-			{spellID = 177081, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Copeland's Clarity (Spellpower, Use)
-			{spellID = 177594, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Darmac's Unstable Talisman (Haste, Proc)
-			{spellID = 177051, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Orb of Putrescence (Mastery, Proc)
-			{spellID = 176941, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Furyheart Talisman (Haste, Proc)
-			{spellID = 176980, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Goren Soul Repository (Crit, Proc)
-			{spellID = 177046, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Shards of Nothing (Haste, Use)
-			{spellID = 176875, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Desecrated Shadowmoon Insignia (Intellect, Proc)
-			{spellID = 183924, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Coagulated Genesaur Blood (Multistrike, Proc)
-			{spellID = 165832, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Ragewing's Firefang (Versatility, Use)
-			{spellID = 165543, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Fleshrender's Meathook (Haste, Use)
-			{spellID = 165531, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Enchants
-			-- Mark of Bleeding Hollow (Mastery)
-			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Frostwolf (Multistrike)
-			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Thunderlord (Crit)
-			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Warsong (Haste)
-			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
+			-- 恶魔增效
+			{spellID = 193396, unitID = "pet", caster = "player", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -2986,7 +2934,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Self
