@@ -8,20 +8,20 @@ local class = select(2, UnitClass("player"))
 local ClassColor = RAID_CLASS_COLORS[class]
 
 local colorTable = {
-	["DK"]		= {r = .77, g = .12, b = .23},	-- DeathKnight	196,31,59
-	["DH"]		= {r = .09, g = .95, b = .14},	-- DemonHunter	23,242,36
-	["DLY"]		= {r = 1, g = 0.49, b = .04},	-- Druid		255,125,10
-	["LR"]		= {r = .58, g = .86, b = .49},	-- Hunter		148,219,125 {0.67, 0.83, 0.45}171,212,115
-	["FS"]		= {r = 0, g = .76, b = 1},		-- Mage			0,193,255 {0.41, 0.8, 0.94}105,204,240
-	["WS"]		= {r = 0, g = 1, b = .59},		-- Monk			0,255,150 {0.0, 0.98 , 0.58}0,250,148
-	["QS"]		= {r = 1, g = .22, b = .52},	-- Paladin		255,56,133 {0.96, 0.55, 0.73}245,140,186
-	["MS"]		= {r = .8, g = .87, b = .9},	-- Priest		204,222,230 1 1 1
-	["DZ"]		= {r = 1, g = .91, b = .2},	-- Rogue		255,232,51 {1.0, 0.96, 0.41}255,245,105
-	["SM"]		= {r = 0, g = .44, b = .87},	-- Shaman		0,112,222
-	["SS"]		= {r = .6, g = .47, b = .85},	-- Warlock		153,120,217 {0.58, 0.51, 0.79}148,130,201
-	["ZS"]		= {r = .9, g = .65, b = .45},	-- Warrior		230,166,115 {0.78, 0.61, 0.43}199,156,110
-	["Black"]	= {r = 0, g = 0, b = 0},
-	["Gray"]	= {r = .37, g = .3, b = .3},	--				94,77,77
+	["DK"]		= {.77, .12, .23, 1},	-- DeathKnight	196,31,59
+	["DH"]		= {.09, .95, .14, 1},	-- DemonHunter	23,242,36
+	["DLY"]		= {1, 0.49, .04, 1},	-- Druid		255,125,10
+	["LR"]		= {.58, .86, .49, 1},	-- Hunter		148,219,125 {0.67, 0.83, 0.45}171,212,115
+	["FS"]		= {0, .76, 1, 1},		-- Mage			0,193,255 {0.41, 0.8, 0.94}105,204,240
+	["WS"]		= {0, 1, .59, 1},		-- Monk			0,255,150 {0.0, 0.98 , 0.58}0,250,148
+	["QS"]		= {1, .22, .52, 1},	-- Paladin		255,56,133 {0.96, 0.55, 0.73}245,140,186
+	["MS"]		= {.8, .87, .9, 1},	-- Priest		204,222,230 1 1 1
+	["DZ"]		= {1, .91, .2, 1},	-- Rogue		255,232,51 {1.0, 0.96, 0.41}255,245,105
+	["SM"]		= {0, .44, .87, 1},	-- Shaman		0,112,222
+	["SS"]		= {.6, .47, .85, 1},	-- Warlock		153,120,217 {0.58, 0.51, 0.79}148,130,201
+	["ZS"]		= {.9, .65, .45, 1},	-- Warrior		230,166,115 {0.78, 0.61, 0.43}199,156,110
+	["Black"]	= {0, 0, 0, 1},
+	["Gray"]	= {.37, .3, .3, 1},	--				94,77,77
 	["OWN"]		= ClassColor,
 }
 
@@ -38,7 +38,8 @@ local function SetTemplate(Parent, Size)
 		edgeSize = 1 * Misc.mult,
 	})
 	--F:SetBackdropColor(backcolor.r, backcolor.g, backcolor.b, .5)
-	F:SetBackdropBorderColor(colorTable[Misc.modeborder].r, colorTable[Misc.modeborder].g, colorTable[Misc.modeborder].b, 1)
+--	F:SetBackdropBorderColor(colorTable[Misc.modeborder].r, colorTable[Misc.modeborder].g, colorTable[Misc.modeborder].b, 1)
+	F:SetBackdropBorderColor(unpack(colorTable[Misc.modeborder]))
 
 	return F
 end
@@ -174,7 +175,7 @@ function Filger:DisplayActives()
 					bar.statusbar:SetWidth(self.BarWidth * Misc.mult)
 					bar.statusbar:SetHeight(7 * Misc.mult)
 					bar.statusbar:SetStatusBarTexture(Misc.barfg)			-- bar_FG
-					bar.statusbar:SetStatusBarColor(colorTable[Misc.modefg].r, colorTable[Misc.modefg].g, colorTable[Misc.modefg].b, 1)
+					bar.statusbar:SetStatusBarColor(unpack(colorTable[Misc.modefg]))
 					if self.IconSide == "LEFT" then
 						bar.statusbar:SetPoint("BOTTOMLEFT", bar, "BOTTOMRIGHT", 3 * Misc.mult, 2 * Misc.mult)
 					elseif self.IconSide == "RIGHT" then

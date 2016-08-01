@@ -3,36 +3,33 @@ local Media = "Interface\\AddOns\\ShestakUI_Filger\\Media\\"
 Misc.Media = Media
 
 -- ShestakUI_Filger.lua
--- ¿ÉÑ¡ÑÕÉ«: "DK", "DLY"-Ğ¡µÂ, "LR", "FS", "WS"-ÎäÉ®, "QS", "MS"-ÄÁÊ¦(¼È°×É«), "DZ", "SM", "SS", "ZS", "Black"-ºÚÉ«, "Gray"-»ÒÉ«, "OWN"-×Ô¶¯Ñ¡ÔñÄãµ±Ç°½ÇÉ«µÄÖ°ÒµÑÕÉ«.
-Misc.font = Media.."Pixel.ttf"	-- ËùÓĞÊı×ÖµÄ×ÖÌå
-Misc.barfg = Media.."White"		-- ¼ÆÊ±Ìõ²ÄÖÊ
-Misc.modefg = "OWN"				-- ¼ÆÊ±ÌõÑÕÉ«
---Misc.modeback = "OWN"			-- Í¼±ê±³¾°»òÃÉ°åÑÕÉ«£¨Ò»ÏñËØºÍÃ«ÈŞÈŞÑùÊ½ÎŞĞ§£©
-Misc.modeborder = "Black"		-- ±ß¿òÑÕÉ«
-Misc.numsize = 12				-- ²ãÊı, ¼ÆÊ±ÌõµÄ¼ÆÊ±Êı×Ö´óĞ¡
-Misc.namesize = 14				-- ·¨ÊõÃû³Æ×ÖÌå´óĞ¡
-Misc.maxTestIcon = 5			-- ²âÊÔÄ£Ê½Ã¿×éÏÔÊ¾Í¼±êÊıÁ¿
+-- å¯é€‰é¢œè‰²: "DK", "DLY"-å°å¾·, "LR", "FS", "WS"-æ­¦åƒ§, "QS", "MS"-ç‰§å¸ˆ(æ—¢ç™½è‰²), "DZ", "SM", "SS", "ZS", "Black"-é»‘è‰², "Gray"-ç°è‰², "OWN"-è‡ªåŠ¨é€‰æ‹©ä½ å½“å‰è§’è‰²çš„èŒä¸šé¢œè‰².
+Misc.font = Media.."Pixel.ttf"	-- æ‰€æœ‰æ•°å­—çš„å­—ä½“
+Misc.barfg = Media.."White"		-- è®¡æ—¶æ¡æè´¨
+Misc.modefg = "OWN"				-- è®¡æ—¶æ¡é¢œè‰²
+--Misc.modeback = "OWN"			-- å›¾æ ‡èƒŒæ™¯æˆ–è’™æ¿é¢œè‰²ï¼ˆä¸€åƒç´ å’Œæ¯›ç»’ç»’æ ·å¼æ— æ•ˆï¼‰
+Misc.modeborder = "Black"		-- è¾¹æ¡†é¢œè‰²
+Misc.numsize = 12				-- å±‚æ•°, è®¡æ—¶æ¡çš„è®¡æ—¶æ•°å­—å¤§å°
+Misc.namesize = 14				-- æ³•æœ¯åç§°å­—ä½“å¤§å°
+Misc.maxTestIcon = 5			-- æµ‹è¯•æ¨¡å¼æ¯ç»„æ˜¾ç¤ºå›¾æ ‡æ•°é‡
 
 -- Cooldowns.lua
-Misc.cdsize = 16				-- Í¼±êÖĞ¼äµÄ CD Êı×Ö´óĞ¡
+Misc.cdsize = 16				-- å›¾æ ‡ä¸­é—´çš„ CD æ•°å­—å¤§å°
 
 -- Spells.lua
-Misc.Tbar = "ON"				-- ¿ª(ON)\¹Ø(OFF) target_bar Ä¿±ê¼ÆÊ±Ìõ - (Ö÷Í¼±ê×¢ºÅ 9)
-Misc.Pbar = "ON"				-- ¿ª(ON)\¹Ø(OFF) pve_cc ¼ÆÊ±Ìõ - (Ö÷Í¼±ê×¢ºÅ 7)
-Misc.CD = "OFF"					-- ¿ª(ON)\¹Ø(OFF) COOLDOWN ÀäÈ´Í¼±ê - (Ö÷Í¼±ê×¢ºÅ 8)
-Misc.barw = 160					-- ¼ÆÊ±Ìõ³¤¶È - (Ö÷Í¼±ê×¢ºÅ 7,9)
-Misc.CDnum = 8					-- COOLDOWN ÀäÈ´Í¼±êÃ¿ĞĞÏÔÊ¾¼¸¸ö - (Ö÷Í¼±ê×¢ºÅ 8)
-Misc.IconSize = 30				-- Í¼±ê´óĞ¡ - (Ö÷Í¼±ê×¢ºÅ 1,2,3,4)
-Misc.MidIconSize = 48
-Misc.BigIconSize = 54			-- ´óÍ¼±ê - (Ö÷Í¼±ê×¢ºÅ 5,6)
-Misc.CDIconSize = 32			-- COOLDOWN ÀäÈ´Í¼±ê´óĞ¡ - (Ö÷Í¼±ê×¢ºÅ 8)
-Misc.barIconSize = 26			-- ¼ÆÊ±ÌõÉÏµÄÍ¼±ê´óĞ¡ - (Ö÷Í¼±ê×¢ºÅ 7,9)
-Misc.Interval = 3				-- ¼ä¾à
+Misc.Tbar = "ON"				-- å¼€(ON)\å…³(OFF) target_bar ç›®æ ‡è®¡æ—¶æ¡ - (ä¸»å›¾æ ‡æ³¨å· 9)
+Misc.Pbar = "ON"				-- å¼€(ON)\å…³(OFF) pve_cc è®¡æ—¶æ¡ - (ä¸»å›¾æ ‡æ³¨å· 7)
+Misc.CD = "OFF"					-- å¼€(ON)\å…³(OFF) COOLDOWN å†·å´å›¾æ ‡ - (ä¸»å›¾æ ‡æ³¨å· 8)
+Misc.barw = 160					-- è®¡æ—¶æ¡é•¿åº¦ - (ä¸»å›¾æ ‡æ³¨å· 7,9)
+Misc.CDnum = 8					-- COOLDOWN å†·å´å›¾æ ‡æ¯è¡Œæ˜¾ç¤ºå‡ ä¸ª - (ä¸»å›¾æ ‡æ³¨å· 8)
+Misc.IconSize = 30				-- å°å›¾æ ‡å°ºå¯¸
+Misc.MidIconSize = 48           -- ä¸­å›¾æ ‡å°ºå¯¸
+Misc.BigIconSize = 54			-- å¤§å›¾æ ‡å°ºå¯¸
+Misc.CDIconSize = 32			-- COOLDOWN å†·å´å›¾æ ‡å¤§å° - (ä¸»å›¾æ ‡æ³¨å· 8)
+Misc.barIconSize = 26			-- è®¡æ—¶æ¡ä¸Šçš„å›¾æ ‡å¤§å° - (ä¸»å›¾æ ‡æ³¨å· 7,9)
+Misc.Interval = 3				-- é—´è·
 
--------------------------------------------------------- 
-
-
-
+--------------------------------------------------------
 --   Pixel perfect script of custom ui Scale
 local resolution = ({GetScreenResolutions()})[GetCurrentResolution()] or GetCVar("gxWindowedResolution")
 
@@ -42,17 +39,17 @@ end
 UIScale()
 
 local mult = 768 / string.match(resolution, "%d+x(%d+)") / uiscale
-local Scale = function(x) 
-   return mult * math.floor(x / mult + 0.5) 
-end 
-Misc.mult = mult 
+local Scale = function(x)
+   return mult * math.floor(x / mult + 0.5)
+end
+Misc.mult = mult
 ----------------------- ShestakUI_Filger_1px -----------------------
 
--- ÃüÃû
+-- å‘½å
 local _, ns = ...
 ns.Misc = Misc
 
--- Î»ÖÃ
+-- ä½ç½®
 if IsAddOnLoaded("ShestakUI") then
 	local T, C, L, _ = unpack(ShestakUI)
 	if _G.oUF_Player then
@@ -69,16 +66,16 @@ if IsAddOnLoaded("ShestakUI") then
 		}
 	end
 else
-	-- ÉèÖÃ(³õ´Îµ÷Õû Î»ÖÃ,Í¼±ê´óĞ¡µÈ, Çë¶ÔÕÕÖ÷Â¥ÖÃ¶¥µÄ±ê×¢Í¼)
+	-- è®¾ç½®(åˆæ¬¡è°ƒæ•´ ä½ç½®,å›¾æ ‡å¤§å°ç­‰, è¯·å¯¹ç…§ä¸»æ¥¼ç½®é¡¶çš„æ ‡æ³¨å›¾)
 	FilgerPositions = {
-		player_buff_icon = {"TOPRIGHT", UIParent, "CENTER", -150, -82},	-- "P_BUFF_ICON"		(player_buff_icon Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 1)
-		player_proc_icon = {"TOPRIGHT", UIParent, "CENTER", -150, -32},	-- "P_PROC_ICON"		(player_proc_icon Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 2)
-		special_proc_icon = {"TOPRIGHT", UIParent, "CENTER", -150, 0},	-- "SPECIAL_P_BUFF_ICON"	(special_proc_icon Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 3)
-		target_debuff_icon = {"TOPLEFT", UIParent, "CENTER", 150, -32},	-- "T_DEBUFF_ICON"		(target_debuff_icon Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 4)
-		target_buff_icon = {"BOTTOMLEFT", UIParent, "CENTER", 150, 2},		-- "T_BUFF"				(target_buff_icon Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 5)
-		pve_debuff = {"BOTTOMRIGHT", UIParent, "CENTER", -150, 2},			-- "PVE/PVP_DEBUFF"		(pve_debuff Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 6)
-		pve_cc = {"TOPLEFT", UIParent, "LEFT", 50, 0},						-- "PVE/PVP_CC"			(pve_cc Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 7)
-		cooldown = {"TOPLEFT", UIParent, "CENTER", -90, -120},				-- "COOLDOWN"			(cooldown Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 8)
-		target_bar = {"TOPRIGHT", UIParent, "RIGHT", -260, 0},				-- "T_DE/BUFF_BAR"		(target_bar Î»ÖÃ×ø±ê - Ö÷Í¼±ê×¢ºÅ 9)
+		player_buff_icon = {"TOPRIGHT", UIParent, "CENTER", -150, -82},	-- "P_BUFF_ICON"		(player_buff_icon ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 1)
+		player_proc_icon = {"TOPRIGHT", UIParent, "CENTER", -150, -32},	-- "P_PROC_ICON"		(player_proc_icon ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 2)
+		special_proc_icon = {"TOPRIGHT", UIParent, "CENTER", -150, 0},	-- "SPECIAL_P_BUFF_ICON"	(special_proc_icon ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 3)
+		target_debuff_icon = {"TOPLEFT", UIParent, "CENTER", 150, -32},	-- "T_DEBUFF_ICON"		(target_debuff_icon ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 4)
+		target_buff_icon = {"BOTTOMLEFT", UIParent, "CENTER", 150, 2},		-- "T_BUFF"				(target_buff_icon ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 5)
+		pve_debuff = {"BOTTOMRIGHT", UIParent, "CENTER", -150, 2},			-- "PVE/PVP_DEBUFF"		(pve_debuff ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 6)
+		pve_cc = {"TOPLEFT", UIParent, "LEFT", 50, 0},						-- "PVE/PVP_CC"			(pve_cc ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 7)
+		cooldown = {"TOPLEFT", UIParent, "CENTER", -90, -120},				-- "COOLDOWN"			(cooldown ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 8)
+		target_bar = {"TOPRIGHT", UIParent, "RIGHT", -260, 0},				-- "T_DE/BUFF_BAR"		(target_bar ä½ç½®åæ ‡ - ä¸»å›¾æ ‡æ³¨å· 9)
 	}
 end
