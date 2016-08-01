@@ -71,7 +71,9 @@ end
 --	Filger(by Nils Ruesch, editors Affli/SinaC/Ildyria)
 ----------------------------------------------------------------------------------------
 SpellActivationOverlayFrame:SetFrameStrata("BACKGROUND")
-local Filger = {}
+
+Filger = {}
+
 local MyUnits = {player = true, vehicle = true, pet = true}
 
 function Filger:UnitBuff(unitID, inSpellID, spn, absID)

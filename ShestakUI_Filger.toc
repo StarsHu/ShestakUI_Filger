@@ -11,3 +11,4 @@
 Settings.lua
 Spells.lua
 ShestakUI_Filger.lua
+Commands.lua
