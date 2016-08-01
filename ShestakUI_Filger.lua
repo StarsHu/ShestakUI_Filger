@@ -1,7 +1,9 @@
 ﻿local _, ns = ...
 local Misc = ns.Misc
---	Misc.back = Misc.Media.."back"
-	Misc.border = Misc.Media.."White"
+    --Misc.back = Misc.Media.."HalBackground"
+	--Misc.border = Misc.Media.."GlowTex"
+    Misc.back = Misc.Media.."back"
+    Misc.border = Misc.Media.."White"
 	Misc.barbg = Misc.Media.."Texture"
 
 local class = select(2, UnitClass("player"))
@@ -25,6 +27,7 @@ local colorTable = {
 	["OWN"]		= ClassColor,
 }
 
+-- 默认
 local function SetTemplate(Parent, Size)
 	local F = CreateFrame("Frame", nil, Parent)
 	F:SetFrameLevel(3)
@@ -43,6 +46,26 @@ local function SetTemplate(Parent, Size)
 
 	return F
 end
+
+-- 毛茸茸
+-- local function SetTemplate(Parent, Size)
+	-- local F = CreateFrame("Frame", nil, Parent)
+	-- F:SetFrameLevel(2)
+	-- F:SetPoint("TOPLEFT", -1 * Misc.mult, 1 * Misc.mult)
+	-- F:SetPoint("BOTTOMRIGHT", 1 * Misc.mult, -1 * Misc.mult)
+	-- F:SetBackdrop({
+		-- bgFile = Misc.back, 
+		-- edgeFile = Misc.border, 
+		-- insets = {left = 2 * Misc.mult, right = 2 * Misc.mult, top = 2 * Misc.mult, bottom = 2 * Misc.mult},
+		-- tile = false, tileSize = 0, 
+		-- edgeSize = 3 * Misc.mult,
+	-- })
+	-- F:SetBackdropColor(colorTable[Misc.modeback].r, colorTable[Misc.modeback].g, colorTable[Misc.modeback].b, .6)
+
+	-- F:SetBackdropBorderColor(colorTable[Misc.modeborder].r, colorTable[Misc.modeborder].g, colorTable[Misc.modeborder].b, 1)
+
+	-- return F
+-- end
 
 ----------------------------------------------------------------------------------------
 --	Filger(by Nils Ruesch, editors Affli/SinaC/Ildyria)
@@ -524,7 +547,8 @@ if Filger_Spells and Filger_Spells[class] then
 		movebar:SetScript("OnDragStop", function(self) self:StopMovingOrSizing() end)
 		movebar:SetBackdrop({  
 			bgFile = "Interface\\Buttons\\WHITE8x8", 
-			insets = {left = 1, right = 1, top = 1, bottom = 1},
+			insets = {left = 1, right = 1, top = 1, bottom = 1},  -- 默认
+			-- insets = {left = 2, right = 2, top = 2, bottom = 2}, --毛茸茸
 		})
 		movebar:SetBackdropColor(0, 1, 0, 0.6)
 		movebar:SetSize(data.IconSize or 37, data.IconSize or 37)
