@@ -3,7 +3,6 @@ local Misc = ns.Misc
     --Misc.back = Misc.Media.."HalBackground"
 	--Misc.border = Misc.Media.."GlowTex"
     Misc.back = Misc.Media.."back"
-    Misc.border = Misc.Media.."White"
 	Misc.barbg = Misc.Media.."Texture"
 
 local class = select(2, UnitClass("player"))
@@ -304,7 +303,7 @@ function Filger:DisplayActives()
 		end
 		if value.duration and value.duration > 0 then
 			if self.Mode == "ICON" then
-				CooldownFrame_Set(bar.cooldown, value.start, value.duration, 1)
+				CooldownFrame_Set(bar.cooldown, value.start, value.duration, 1) --CooldownFrame_Set
 				if value.data.filter == "CD" or value.data.filter == "ICD" then
 					bar.value = value
 					bar.activeIndex = activeIndex
@@ -596,7 +595,7 @@ if Filger_Spells and Filger_Spells[class] then
 		frame.movebar = movebar
 	end
 end
---
+
 ---- Test function
 --local InitTest = function(msg)
 --	msg = string.lower(msg)
