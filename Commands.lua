@@ -9,8 +9,8 @@ SLASH_S_FILGER2 = "/filger"
 testMode = false
 
 local function ShowHelp()
-    print("|cffffff00/filger move   解锁/锁定|r")
-    print("|cffffff00/filger reset  重置|r")
+    print("|cffffff00 %s move  解锁/锁定|r", SLASH_S_FILGER1)
+    print("|cffffff00 %s reset  重置|r", SLASH_S_FILGER1)
 end
 
 local function Move()
