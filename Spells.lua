@@ -643,7 +643,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -662,158 +662,158 @@ Filger_Spells = {
 			-- 自然智慧 (治疗T17)
 			{spellID = 177794, unitID = "player", caster = "player", filter = "BUFF"},
 
-			-- Trinkets
-			-- 1.0: Darkmoon Cards
-			-- Caster DPS (Crit, Proc)
-			{spellID = 162919, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Healing (Spirit, Proc)
-			{spellID = 162913, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS (Crit, Proc)
-			{spellID = 162915, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tanking (Crit, Proc)
-			{spellID = 162917, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.1: Alchemy Stones
-			-- Agility
-			{spellID = 60233, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Intellect
-			{spellID = 60234, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.2: Hallow's End
-			-- Brawler's Statue (Bonus Armor, Use)
-			{spellID = 127967, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Coren's Cold Chromium (Attack Power, Proc)
-			{spellID = 127926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Mithril Wristwatch (Spell Power, Proc)
-			{spellID = 127924, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Thousand-Year Pickled Egg (Haste, Proc)
-			{spellID = 127914, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Heirlooms
-			-- Infallible Tracking Charm
-			{spellID = 201408, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Orb Of Voidsight
-			{spellID = 201410, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 2.0: PvP Trinkets
-			-- Battlemaster (Health, Use)
-			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Caster DPS (Versatility, Use)
-			{spellID = 182073, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Caster DPS (Versatility, Proc)
-			{spellID = 182058, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS [Agility] (Versatility, Proc)
-			{spellID = 182060, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Tanking
-			-- Battering Talisman (Haste, Proc)
-			{spellID = 177102, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blast Furnace Door (Mastery, Proc)
-			{spellID = 177056, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Evergaze Arcane Eidolon (Bonus Armor, Proc)
-			{spellID = 177053, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Relic of Blood (Haste, Proc)
-			{spellID = 176937, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kyb's Foolish Perseverance (Health, Use)
-			{spellID = 176460, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Pol's Blinded Eye (Mastery, Use)
-			{spellID = 176876, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Stoneheart Idol (Crit, Proc)
-			{spellID = 176982, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tablet of Turnbuckle Teamwork (Bonus Armor, Use)
-			{spellID = 176873, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.1: Tanking
-			-- Anzu's Cursed Plume (Mastery, Proc)
-			{spellID = 183931, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Enforcer's Stun Grenade (Versatility, Use)
-			{spellID = 165534, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tyrant's Decree (Stamina, Proc)
-			{spellID = 184770, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Xeri'tac's Unhatched Egg Sac (Mastery, Proc)
-			{spellID = 165824, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 4.0: Melee DPS [Agility]
-			-- Beating Heart of the Mountain (Multistrike, Use)
-			{spellID = 176878, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blackheart Enforcer's Medallion (Multistrike, Proc)
-			{spellID = 176984, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Jar of Doom (Mastery, Proc)
-			{spellID = 176939, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Humming Blackiron Trigger (Crit, Proc)
-			{spellID = 177067, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Lucky Double-Sided Coin (Agility, Use)
-			{spellID = 177597, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Meaty Dragonspine Trophy (Haste, Proc)
-			{spellID = 177035, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Scales of Doom (Multistrike, Proc)
-			{spellID = 177038, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 4.1: Melee DPS [Agility]
-			-- Gor'ashan's Lodestone Spike (Multistrike, Use)
-			{spellID = 165542, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kihra's Adrenaline Injector (Mastery, Use)
-			{spellID = 165485, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Malicious Censer
-			{spellID = 183926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Mirror of the Blademaster (Images, Proc)
-			{spellID = 184270, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Soul Capacitator (Damage, Proc)
-			{spellID = 184293, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Witherbark's Branch (Haste, Proc)
-			{spellID = 165822, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 5.0: Caster DPS
-			-- Blackiron Micro Crucible (Multistrike, Proc)
-			{spellID = 177081, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Copeland's Clarity (Spellpower, Use)
-			{spellID = 177594, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Darmac's Unstoppable Talisman (Haste, Proc)
-			{spellID = 177051, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Orb of Putrescence (Mastery, Proc)
-			{spellID = 176941, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Furyheart Talisman (Haste, Proc)
-			{spellID = 176980, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Goren Soul Repository (Crit, Proc)
-			{spellID = 177046, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Shards of Nothing (Haste, Use)
-			{spellID = 176875, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 5.1: Caster DPS
-			-- Desecrated Shadowmoon Insignia (Intellect, Proc)
-			{spellID = 183924, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Coagulated Genesaur Blood (Multistrike, Proc)
-			{spellID = 165832, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Ragewing's Firefang (Versatility, Use)
-			{spellID = 165543, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Fleshrender's Meathook (Haste, Use)
-			{spellID = 165531, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 6.0: Healing
-			-- Auto-Repairing Autoclave (Haste, Proc)
-			{spellID = 177086, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Elementalist's Shielding Talisman (Multistrike, Proc)
-			{spellID = 177063, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Emblem of Caustic Healing (Haste, Use)
-			{spellID = 176879, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Censer of Faith (Haste, Proc)
-			{spellID = 176943, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Immaculate Living Mushroom (Crit, Proc)
-			{spellID = 176978, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Ironspike Chew Toy (Spirit, Proc)
-			{spellID = 177060, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 6.1: Healing
-			-- Intuition's Gift (Crit, Use)
-			{spellID = 183929, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Leaf of the Ancient Protectors (Versatility, Proc)
-			{spellID = 165833, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tharbek's Lucky Pebble (Mastery, Use)
-			{spellID = 165535, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Voidmender's Shadowgem (Crit, Use)
-			{spellID = 165532, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Enchants
-			-- Mark of Blackrock (Bonus Armor)
-			{spellID = 159679, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Bleeding Hollow (Mastery)
-			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Shadowmoon (Spirit)
-			{spellID = 159678, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Frostwolf (Multistrike)
-			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Thunderlord (Crit)
-			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Warsong (Haste)
-			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Trinkets
+--			-- 1.0: Darkmoon Cards
+--			-- Caster DPS (Crit, Proc)
+--			{spellID = 162919, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Healing (Spirit, Proc)
+--			{spellID = 162913, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Melee DPS (Crit, Proc)
+--			{spellID = 162915, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Tanking (Crit, Proc)
+--			{spellID = 162917, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 1.1: Alchemy Stones
+--			-- Agility
+--			{spellID = 60233, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Intellect
+--			{spellID = 60234, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 1.2: Hallow's End
+--			-- Brawler's Statue (Bonus Armor, Use)
+--			{spellID = 127967, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Coren's Cold Chromium (Attack Power, Proc)
+--			{spellID = 127926, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Mithril Wristwatch (Spell Power, Proc)
+--			{spellID = 127924, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Thousand-Year Pickled Egg (Haste, Proc)
+--			{spellID = 127914, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 3.0: Heirlooms
+--			-- Infallible Tracking Charm
+--			{spellID = 201408, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Orb Of Voidsight
+--			{spellID = 201410, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 2.0: PvP Trinkets
+--			-- Battlemaster (Health, Use)
+--			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Caster DPS (Versatility, Use)
+--			{spellID = 182073, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Caster DPS (Versatility, Proc)
+--			{spellID = 182058, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Melee DPS [Agility] (Versatility, Proc)
+--			{spellID = 182060, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 3.0: Tanking
+--			-- Battering Talisman (Haste, Proc)
+--			{spellID = 177102, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Blast Furnace Door (Mastery, Proc)
+--			{spellID = 177056, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Evergaze Arcane Eidolon (Bonus Armor, Proc)
+--			{spellID = 177053, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Formidable Relic of Blood (Haste, Proc)
+--			{spellID = 176937, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Kyb's Foolish Perseverance (Health, Use)
+--			{spellID = 176460, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Pol's Blinded Eye (Mastery, Use)
+--			{spellID = 176876, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Stoneheart Idol (Crit, Proc)
+--			{spellID = 176982, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Tablet of Turnbuckle Teamwork (Bonus Armor, Use)
+--			{spellID = 176873, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 3.1: Tanking
+--			-- Anzu's Cursed Plume (Mastery, Proc)
+--			{spellID = 183931, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Enforcer's Stun Grenade (Versatility, Use)
+--			{spellID = 165534, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Tyrant's Decree (Stamina, Proc)
+--			{spellID = 184770, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Xeri'tac's Unhatched Egg Sac (Mastery, Proc)
+--			{spellID = 165824, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 4.0: Melee DPS [Agility]
+--			-- Beating Heart of the Mountain (Multistrike, Use)
+--			{spellID = 176878, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Blackheart Enforcer's Medallion (Multistrike, Proc)
+--			{spellID = 176984, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Formidable Jar of Doom (Mastery, Proc)
+--			{spellID = 176939, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Humming Blackiron Trigger (Crit, Proc)
+--			{spellID = 177067, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Lucky Double-Sided Coin (Agility, Use)
+--			{spellID = 177597, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Meaty Dragonspine Trophy (Haste, Proc)
+--			{spellID = 177035, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Scales of Doom (Multistrike, Proc)
+--			{spellID = 177038, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 4.1: Melee DPS [Agility]
+--			-- Gor'ashan's Lodestone Spike (Multistrike, Use)
+--			{spellID = 165542, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Kihra's Adrenaline Injector (Mastery, Use)
+--			{spellID = 165485, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Malicious Censer
+--			{spellID = 183926, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Mirror of the Blademaster (Images, Proc)
+--			{spellID = 184270, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Soul Capacitator (Damage, Proc)
+--			{spellID = 184293, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Witherbark's Branch (Haste, Proc)
+--			{spellID = 165822, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 5.0: Caster DPS
+--			-- Blackiron Micro Crucible (Multistrike, Proc)
+--			{spellID = 177081, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Copeland's Clarity (Spellpower, Use)
+--			{spellID = 177594, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Darmac's Unstoppable Talisman (Haste, Proc)
+--			{spellID = 177051, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Formidable Orb of Putrescence (Mastery, Proc)
+--			{spellID = 176941, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Furyheart Talisman (Haste, Proc)
+--			{spellID = 176980, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Goren Soul Repository (Crit, Proc)
+--			{spellID = 177046, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Shards of Nothing (Haste, Use)
+--			{spellID = 176875, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 5.1: Caster DPS
+--			-- Desecrated Shadowmoon Insignia (Intellect, Proc)
+--			{spellID = 183924, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Coagulated Genesaur Blood (Multistrike, Proc)
+--			{spellID = 165832, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Ragewing's Firefang (Versatility, Use)
+--			{spellID = 165543, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Fleshrender's Meathook (Haste, Use)
+--			{spellID = 165531, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 6.0: Healing
+--			-- Auto-Repairing Autoclave (Haste, Proc)
+--			{spellID = 177086, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Elementalist's Shielding Talisman (Multistrike, Proc)
+--			{spellID = 177063, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Emblem of Caustic Healing (Haste, Use)
+--			{spellID = 176879, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Formidable Censer of Faith (Haste, Proc)
+--			{spellID = 176943, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Immaculate Living Mushroom (Crit, Proc)
+--			{spellID = 176978, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Ironspike Chew Toy (Spirit, Proc)
+--			{spellID = 177060, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 6.1: Healing
+--			-- Intuition's Gift (Crit, Use)
+--			{spellID = 183929, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Leaf of the Ancient Protectors (Versatility, Proc)
+--			{spellID = 165833, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Tharbek's Lucky Pebble (Mastery, Use)
+--			{spellID = 165535, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- Voidmender's Shadowgem (Crit, Use)
+--			{spellID = 165532, unitID = "player", caster = "player", filter = "BUFF"},
+--
+--			-- Enchants
+--			-- Mark of Blackrock (Bonus Armor)
+--			{spellID = 159679, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Mark of Bleeding Hollow (Mastery)
+--			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Mark of Shadowmoon (Spirit)
+--			{spellID = 159678, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Mark of the Frostwolf (Multistrike)
+--			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Mark of the Thunderlord (Crit)
+--			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Mark of Warsong (Haste)
+--			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -821,7 +821,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Cenarion Ward
