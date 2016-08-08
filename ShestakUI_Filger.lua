@@ -6,6 +6,7 @@ local Misc = ns.Misc
 
 local class = select(2, UnitClass("player"))
 local ClassColor = RAID_CLASS_COLORS[class]
+local TestMode = Misc.testMode
 
 local colorTable = {
 	["DK"]		= {r = .77, g = .12, b = .23},	-- DeathKnight	196,31,59
@@ -570,38 +571,68 @@ if Filger_Spells and Filger_Spells[class] then
 	end
 end
 
--- Test function
-local InitTest = function(msg)
+-- TestMode module
+if TestMode == true then
+    for i = 1, #Filger_Spells[class], 1 do
+        local data = Filger_Spells[class][i]
+        local frame = _G["FilgerFrame"..i.."_"..data.Name]
+        frame.actives = {}
+--        if testMode then
+        for j = 1, math.min(Misc.maxTestIcon, #Filger_Spells[class][i]), 1 do
+            local data = Filger_Spells[class][i][j]
+            local name, icon
+            if data.spellID then
+                name, _, icon = GetSpellInfo(data.spellID)
+            elseif data.slotID then
+                local slotLink = GetInventoryItemLink("player", data.slotID)
+                if slotLink then
+                    name, _, _, _, _, _, _, _, _, icon = GetItemInfo(slotLink)
+                end
+            end
+            frame.actives[j] = {data = data, name = name, icon = icon, count = 9, start = 0, duration = 0, spid = data.spellID or data.slotID}
+        end
+--            frame:SetScript("OnEvent", nil)
+--            frame.movebar:Show()
+--        else
+--            frame:SetScript("OnEvent", Filger.OnEvent)
+--            frame.movebar:Hide()
+--        end
+        Filger.DisplayActives(frame)
+    end
+end
+
+-- Commands module
+local FilgerCommand = function(msg)
 	msg = string.lower(msg)
 	if msg == "test" then
 		if UnitAffectingCombat("player") then print("|cffffff00"..ERR_NOT_IN_COMBAT.."|r") return end
-		testMode = not testMode
-		for i = 1, #Filger_Spells[class], 1 do	
-			local data = Filger_Spells[class][i]
-			local frame = _G["FilgerFrame"..i.."_"..data.Name]
-			frame.actives = {}
-			if testMode then
-				for j = 1, math.min(Misc.maxTestIcon, #Filger_Spells[class][i]), 1 do
-					local data = Filger_Spells[class][i][j]
-					local name, icon
-					if data.spellID then
-						name, _, icon = GetSpellInfo(data.spellID)
-					elseif data.slotID then
-						local slotLink = GetInventoryItemLink("player", data.slotID)
-						if slotLink then
-							name, _, _, _, _, _, _, _, _, icon = GetItemInfo(slotLink)
-						end
-					end
-					frame.actives[j] = {data = data, name = name, icon = icon, count = 9, start = 0, duration = 0, spid = data.spellID or data.slotID}
-				end
-				frame:SetScript("OnEvent", nil)
-				frame.movebar:Show()
-			else
-				frame:SetScript("OnEvent", Filger.OnEvent)
-				frame.movebar:Hide()
-			end
-			Filger.DisplayActives(frame)
-		end
+		TestMode = not TestMode
+--		for i = 1, #Filger_Spells[class], 1 do
+--			local data = Filger_Spells[class][i]
+--			local frame = _G["FilgerFrame"..i.."_"..data.Name]
+--			frame.actives = {}
+--			if testMode then
+--				for j = 1, math.min(Misc.maxTestIcon, #Filger_Spells[class][i]), 1 do
+--					local data = Filger_Spells[class][i][j]
+--					local name, icon
+--					if data.spellID then
+--						name, _, icon = GetSpellInfo(data.spellID)
+--					elseif data.slotID then
+--						local slotLink = GetInventoryItemLink("player", data.slotID)
+--						if slotLink then
+--							name, _, _, _, _, _, _, _, _, icon = GetItemInfo(slotLink)
+--						end
+--					end
+--					frame.actives[j] = {data = data, name = name, icon = icon, count = 9, start = 0, duration = 0, spid = data.spellID or data.slotID}
+--				end
+--				frame:SetScript("OnEvent", nil)
+--				frame.movebar:Show()
+--			else
+--				frame:SetScript("OnEvent", Filger.OnEvent)
+--				frame.movebar:Hide()
+--			end
+--			Filger.DisplayActives(frame)
+--		end
 	elseif msg == "reset" then
 		for i = 1, #Filger_Spells[class], 1 do
 			local data = Filger_Spells[class][i]
@@ -615,6 +646,6 @@ local InitTest = function(msg)
 	end
 end
 
-SlashCmdList.FilgerTest = InitTest
+SlashCmdList.FilgerTest = FilgerCommand
 SLASH_FilgerTest1 = "/sf"
 SLASH_FilgerTest2 = "/filger"
