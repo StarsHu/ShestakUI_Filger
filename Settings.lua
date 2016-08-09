@@ -2,8 +2,7 @@ local Misc = CreateFrame("Frame")
 local Media = "Interface\\AddOns\\ShestakUI_Filger\\Media\\"
 Misc.Media = Media
 
-Misc.testMode = False           -- ����ģʽ(true/false)
-Misc.moveMode = False           -- �ƶ�ģʽ(true/false)
+Misc.testMode = true           -- ����ģʽ(true/false)
 
 -- ShestakUI_Filger.lua
 -- 可选颜色: "DK", "DLY"-小德, "LR", "FS", "WS"-武僧, "QS", "MS"-牧师(既白色), "DZ", "SM", "SS", "ZS", "Black"-黑色, "Gray"-灰色, "OWN"-自动选择你当前角色的职业颜色.
