@@ -572,33 +572,39 @@ if Filger_Spells and Filger_Spells[class] then
 end
 
 -- TestMode module
-if TestMode == true then
-    for i = 1, #Filger_Spells[class], 1 do
-        local data = Filger_Spells[class][i]
-        local frame = _G["FilgerFrame"..i.."_"..data.Name]
-        frame.actives = {}
---        if testMode then
-        for j = 1, math.min(Misc.maxTestIcon, #Filger_Spells[class][i]), 1 do
-            local data = Filger_Spells[class][i][j]
-            local name, icon
-            if data.spellID then
-                name, _, icon = GetSpellInfo(data.spellID)
-            elseif data.slotID then
-                local slotLink = GetInventoryItemLink("player", data.slotID)
-                if slotLink then
-                    name, _, _, _, _, _, _, _, _, icon = GetItemInfo(slotLink)
-                end
-            end
-            frame.actives[j] = {data = data, name = name, icon = icon, count = 9, start = 0, duration = 0, spid = data.spellID or data.slotID}
-        end
---            frame:SetScript("OnEvent", nil)
---            frame.movebar:Show()
---        else
---            frame:SetScript("OnEvent", Filger.OnEvent)
---            frame.movebar:Hide()
---        end
-        Filger.DisplayActives(frame)
-    end
+Misc.Move = function()
+	testMode = not testMode
+	for i = 1, #Filger_Spells[class], 1 do
+		local data = Filger_Spells[class][i]
+		local frame = _G["FilgerFrame"..i.."_"..data.Name]
+		frame.actives = {}
+		if testMode then
+			for j = 1, math.min(Misc.maxTestIcon, #Filger_Spells[class][i]), 1 do
+				local data = Filger_Spells[class][i][j]
+				local name, icon
+				if data.spellID then
+					name, _, icon = GetSpellInfo(data.spellID)
+				elseif data.slotID then
+					local slotLink = GetInventoryItemLink("player", data.slotID)
+					if slotLink then
+						name, _, _, _, _, _, _, _, _, icon = GetItemInfo(slotLink)
+					end
+				end
+				frame.actives[j] = {data = data, name = name, icon = icon, count = 9, start = 0, duration = 0, spid = data.spellID or data.slotID}
+			end
+			frame:SetScript("OnEvent", nil)
+			frame.movebar:Show()
+		else
+			frame:SetScript("OnEvent", Filger.OnEvent)
+			frame.movebar:Hide()
+		end
+		Filger.DisplayActives(frame)
+	end
+	return testMode
+end
+
+if TestMode then
+	local enable = Misc.Move()
 end
 
 -- Commands module
@@ -606,33 +612,8 @@ local FilgerCommand = function(msg)
 	msg = string.lower(msg)
 	if msg == "test" then
 		if UnitAffectingCombat("player") then print("|cffffff00"..ERR_NOT_IN_COMBAT.."|r") return end
-		TestMode = not TestMode
---		for i = 1, #Filger_Spells[class], 1 do
---			local data = Filger_Spells[class][i]
---			local frame = _G["FilgerFrame"..i.."_"..data.Name]
---			frame.actives = {}
---			if testMode then
---				for j = 1, math.min(Misc.maxTestIcon, #Filger_Spells[class][i]), 1 do
---					local data = Filger_Spells[class][i][j]
---					local name, icon
---					if data.spellID then
---						name, _, icon = GetSpellInfo(data.spellID)
---					elseif data.slotID then
---						local slotLink = GetInventoryItemLink("player", data.slotID)
---						if slotLink then
---							name, _, _, _, _, _, _, _, _, icon = GetItemInfo(slotLink)
---						end
---					end
---					frame.actives[j] = {data = data, name = name, icon = icon, count = 9, start = 0, duration = 0, spid = data.spellID or data.slotID}
---				end
---				frame:SetScript("OnEvent", nil)
---				frame.movebar:Show()
---			else
---				frame:SetScript("OnEvent", Filger.OnEvent)
---				frame.movebar:Hide()
---			end
---			Filger.DisplayActives(frame)
---		end
+		local movable = Misc.Move()
+--		print(tostring(movable))
 	elseif msg == "reset" then
 		for i = 1, #Filger_Spells[class], 1 do
 			local data = Filger_Spells[class][i]
