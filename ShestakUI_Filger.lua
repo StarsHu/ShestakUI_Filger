@@ -515,20 +515,21 @@ if Filger_Spells and Filger_Spells[class] then
 		local data = Filger_Spells[class][i]
 
 		local movebar = CreateFrame("Frame", "FilgerFrame"..i.."_"..data.Name.."Movebar", UIParent)
-		movebar:SetFrameStrata("TOOLTIP")
-		movebar:EnableMouse(true)
-		movebar:SetMovable(true)
-		movebar:SetClampedToScreen(true)
-		movebar:RegisterForDrag("LeftButton")
-		movebar:SetScript("OnDragStart", function(self) self:StartMoving() end)
-		movebar:SetScript("OnDragStop", function(self) self:StopMovingOrSizing() end)
+		movebar:SetFrameStrata("TOOLTIP") -- 设置框架层级
+		movebar:EnableMouse(true) -- 可鼠标交互
+		movebar:SetMovable(true) -- 可移动
+		movebar:SetClampedToScreen(true) -- 不可移出屏幕
+		movebar:RegisterForDrag("LeftButton") -- 注册左键拖拉事件
+		movebar:SetScript("OnDragStart", function(self) self:StartMoving() end) -- 拖拉事件
+		movebar:SetScript("OnDragStop", function(self) self:StopMovingOrSizing() end) -- 拖拉事件
 		movebar:SetBackdrop({  
 			bgFile = "Interface\\Buttons\\WHITE8x8", 
 			insets = {left = 1, right = 1, top = 1, bottom = 1},
-		})
-		movebar:SetBackdropColor(0, 1, 0, 0.6)
-		movebar:SetSize(data.IconSize or 37, data.IconSize or 37)
-		movebar.Position = data.Position or "CENTER"
+		}) -- 设置边框材质和大小
+		movebar:SetBackdropColor(0, 1, 0, 0.6) -- 背景色
+--        movebar:SetBackdropBorderColor(borderr, borderg, borderb)
+        movebar:SetSize(data.IconSize or 37, data.IconSize or 37) --设置尺寸
+--		movebar.Position = data.Position or "CENTER" -- 定义了个Position，没调用
 		movebar:SetPoint(unpack(data.Position))
 		movebar:Hide()
 
