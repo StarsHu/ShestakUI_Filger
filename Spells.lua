@@ -30,118 +30,45 @@ Filger_Spells = {
 			{spellID = 55233, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Summon Gargoyle
 			{spellID = 49206, filter = "ICD", trigger = "NONE", duration = 40},
+
+            -- Buffs
+            -- Crimson Scourge
+            {spellID = 81141, unitID = "player", caster = "player", filter = "BUFF"},
+            -- Dark Transformation
+            {spellID = 63560, unitID = "pet", caster = "player", filter = "BUFF"},
+            -- Freezing Fog
+            {spellID = 59052, unitID = "player", caster = "player", filter = "BUFF"},
+            -- Killing Machine
+            {spellID = 51124, unitID = "player", caster = "player", filter = "BUFF"},
+            -- Sudden Doom
+            {spellID = 81340, unitID = "player", caster = "player", filter = "BUFF"},
+            -- Unholy Strength
+            {spellID = 53365, unitID = "player", caster = "player", filter = "BUFF"},
+
+            -- 幽魂步
+            {spellID = 212552, unitID = "player", caster = "player", filter = "BUFF"},
+            -- 血肉之盾
+            {spellID = 207319, unitID = "player", caster = "player", filter = "BUFF"},
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
-			-- Buffs
-			-- Crimson Scourge
-			{spellID = 81141, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Dark Transformation
-			{spellID = 63560, unitID = "pet", caster = "player", filter = "BUFF"},
-			-- Freezing Fog
-			{spellID = 59052, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Killing Machine
-			{spellID = 51124, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Sudden Doom
-			{spellID = 81340, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Unholy Strength
-			{spellID = 53365, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Trinkets
-			-- 1.0: Darkmoon Cards
-			-- Melee DPS (Crit, Proc)
-			{spellID = 162915, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tanking (Crit, Proc)
-			{spellID = 162917, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.1: Alchemy Stones
-			-- Strength
-			{spellID = 60229, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.2: Hallow's End
-			-- Brawler's Statue (Bonus Armor, Use)
-			{spellID = 127967, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Coren's Cold Chromium (Attack Power, Proc)
-			{spellID = 127926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 2.0: PvP Trinkets
-			-- Battlemaster (Health, Use)
-			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS [Strength] (Versatility, Use)
-			{spellID = 182073, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS [Strength] (Versatility, Proc)
-			{spellID = 182063, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Heirlooms
-			-- Gronntooth War Horn (Strength, Proc)
-			{spellID = 201405, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Tanking
-			-- Battering Talisman (Haste, Proc)
-			{spellID = 177102, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blast Furnace Door (Mastery, Proc)
-			{spellID = 177056, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Evergaze Arcane Eidolon (Bonus Armor, Proc)
-			{spellID = 177053, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Relic of Blood (Haste, Proc)
-			{spellID = 176937, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kyb's Foolish Perseverance (Health, Use)
-			{spellID = 176460, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Pol's Blinded Eye (Mastery, Use)
-			{spellID = 176876, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Stoneheart Idol (Crit, Proc)
-			{spellID = 176982, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tablet of Turnbuckle Teamwork (Bonus Armor, Use)
-			{spellID = 176873, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.1: Tanking
-			-- Anzu's Cursed Plume (Mastery, Proc)
-			{spellID = 183931, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Enforcer's Stun Grenade (Versatility, Use)
-			{spellID = 165534, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kyrak's Vileblood Serum (Mastery, Use)
-			{spellID = 165535, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tyrant's Decree (Stamina, Proc)
-			{spellID = 184770, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Xeri'tac's Unhatched Egg Sac (Mastery, Proc)
-			{spellID = 165824, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 4.0: Melee DPS [Strength]
-			-- Forgemaster's Insignia (Multistrike, Proc)
-			{spellID = 177096, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Fang (Multistrike, Proc)
-			{spellID = 176935, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Horn of the Screaming Spirits (Mastery, Proc)
-			{spellID = 177042, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Mote of the Mountain (Versatility, Proc)
-			{spellID = 176974, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Scabbard of Kyanos (Strength, Use)
-			{spellID = 177189, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tectus' Beating Heart (Crit, Proc)
-			{spellID = 177040, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Vial of Convulsive Shadows (Multistrike, Use)
-			{spellID = 176874, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 4.1: Melee DPS [Strength]
-			-- Bonemaw's Big Toe (Crit, Use)
-			{spellID = 165532, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Emberscale Talisman (Versatility, Use)
-			{spellID = 165543, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Spores of Alacrity (Haste, Proc)
-			{spellID = 165822, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Unending Hunger (Strength, Proc)
-			{spellID = 183941, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Enchants
-			-- Mark of Blackrock (Bonus Armor)
-			{spellID = 159679, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Bleeding Hollow (Mastery)
-			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Frostwolf (Multistrike)
-			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Thunderlord (Crit)
-			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Warsong (Haste)
-			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
+            -- 白骨之盾
+            {spellID = 195181, unitID = "player", caster = "player", filter = "BUFF"},
+            -- 凋零符文武器
+            {spellID = 194918, unitID = "player", caster = "player", filter = "BUFF"},
+            -- 邪恶狂乱
+            {spellID = 207290, unitID = "player", caster = "player", filter = "BUFF"},
+            -- 符文腐蚀
+            {spellID = 51460, unitID = "player", caster = "player", filter = "BUFF"},
+            -- 冰冷之爪
+            {spellID = 194879, unitID = "player", caster = "player", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -149,13 +76,17 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Blood Plague
 			{spellID = 55078, unitID = "target", caster = "player", filter = "DEBUFF"},
 			-- Frost Fever
 			{spellID = 55095, unitID = "target", caster = "player", filter = "DEBUFF"},
+            -- 溃烂之伤
+            {spellID = 194310, unitID = "target", caster = "player", filter = "DEBUFF"},
+            -- 恶性瘟疫
+            {spellID = 191587, unitID = "target", caster = "player", filter = "DEBUFF"},
 			
 			-- Trinket Effects
 			-- Fel Burn (Empty Drinking Horn)
@@ -321,11 +252,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -449,7 +380,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Darkness
@@ -639,7 +570,7 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
@@ -655,6 +586,19 @@ Filger_Spells = {
 			{spellID = 69369, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Soul of the Forest
 			{spellID = 114108, unitID = "player", caster = "player", filter = "BUFF"},
+			-- 丰饶
+			{spellID = 207640, unitID = "player", caster = "player", filter = "BUFF"},
+			-- 激活
+			{spellID = 29166, unitID = "player", caster = "player", filter = "BUFF"},
+			-- 铁鬃
+			{spellID = 192081, unitID = "player", caster = "player", filter = "BUFF"},
+			-- 乌索尔的印记
+			{spellID = 192083, unitID = "player", caster = "player", filter = "BUFF"},
+			-- 粉碎
+			{spellID = 158792, unitID = "player", caster = "player", filter = "BUFF"},
+			-- 狂暴回复
+			{spellID = 22842, unitID = "player", caster = "player", filter = "BUFF"},
+
 			
 			-- Item sets 套装
 			-- Sage Mender (治疗T16)
@@ -834,6 +778,8 @@ Filger_Spells = {
 			{spellID = 8936, unitID = "target", caster = "player", filter = "BUFF"},
 			-- Wild Growth
 			{spellID = 48438, unitID = "target", caster = "player", filter = "BUFF"},
+			-- 回春（萌芽）
+			{spellID = 155777, unitID = "target", caster = "player", filter = "BUFF"},
 			
 			-- Immobilized
 			{spellID = 45334, unitID = "target", caster = "player", filter = "DEBUFF"},
@@ -1003,11 +949,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -1079,7 +1025,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Ankle Crack (Crocolisk)
@@ -1285,11 +1231,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -1361,7 +1307,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Arcane Charge
@@ -1549,11 +1495,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -1691,7 +1637,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Breath of Fire
@@ -1839,11 +1785,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -1982,7 +1928,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Forbearance
@@ -2103,11 +2049,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -2215,7 +2161,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Guardian Spirit
@@ -2433,11 +2379,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
@@ -2523,7 +2469,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- Crippling Poison
@@ -3040,11 +2986,11 @@ Filger_Spells = {
 		},
 		{
 			Name = "P_PROC_ICON",
-			Direction = "RIGHT",
+			Direction = "LEFT",
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Raging Blow 怒击
@@ -3155,7 +3101,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			Interval = Misc.Interval,
 			Alpha = 1,
-			IconSize = Misc.IconSize,
+			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
 			-- 撕裂
@@ -3268,6 +3214,9 @@ Filger_Spells = {
 			Alpha = 1,
 			IconSize = Misc.IconSize,
 			Position = {unpack(FilgerPositions.special_proc_icon)},
+
+			-- 激活
+			{spellID = 29166, unitID = "player", caster = "player", filter = "BUFF"},
 
 			-- Ashran
 			-- Ancient Artifact
