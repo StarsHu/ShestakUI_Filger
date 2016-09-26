@@ -225,30 +225,11 @@ Filger_Spells = {
 			IconSize = Misc.IconSize,
 			Position = {unpack(FilgerPositions.player_buff_icon)},
 
-			-- Metamorphosis
-			{spellID = 187827, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Empower Wards
-			{spellID = 218256, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Darkness
-			{spellID = 196718, unitID = "player", caster = "player", filter = "BUFF"},
-			-- {spellID = 209426, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Demon Spikes
-			-- {spellID = 203819, unitID = "player", caster = "player", filter = "BUFF"},
-			{spellID = 203720, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Netherwalk (Talent)
-			{spellID = 196555, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Nether Bond (Talent)
-			{spellID = 207810, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Feast of Souls
-			{spellID = 207693, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Immolation Aura
-			{spellID = 178740, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Gluttony
-			{spellID = 227330, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Nemesis
-			{spellID = 208608, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Soul Barrier
-			{spellID = 227225, unitID = "player", caster = "player", filter = "BUFF"},
+			{spellID = 178740, unitID = "player", caster = "player", filter = "BUFF"},  -- 獻祭光環
+			{spellID = 187827, unitID = "player", caster = "player", filter = "BUFF", absID = true},  -- 惡魔化身
+			{spellID = 162264, unitID = "player", caster = "player", filter = "BUFF", absID = true},  -- 惡魔化身
+			{spellID = 188499, unitID = "player", caster = "player", filter = "BUFF"},  -- 劍刃之舞
+			{spellID = 212800, unitID = "player", caster = "player", filter = "BUFF"},  -- 殘影
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -259,120 +240,8 @@ Filger_Spells = {
 			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
-			-- Buffs
-			-- Soul Fragments
-			{spellID = 203981, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Pain Bringer
-			{spellID = 212988, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Spectral Sight
-			{spellID = 188501, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blur
-			{spellID = 212800, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Chaos Blades
-			{spellID = 211048, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Prepared
-			{spellID = 203650, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Momentum
-			{spellID = 208628, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Trinkets
-			-- 1.0: Darkmoon Cards
-			-- Nightmare Fire (Crit, Proc)
-			{spellID = 162919, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Visions of the Future (Spirit, Proc)
-			{spellID = 162913, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Spirit of the Warlords (Crit, Proc)
-			{spellID = 162915, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Strength of Steel (Crit, Proc)
-			{spellID = 162917, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.1: Alchemy Stones
-			-- Agility
-			{spellID = 60233, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.2: Hallow's End
-			-- Brawler's Statue (Bonus Armor, Use)
-			{spellID = 127967, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Coren's Cold Chromium (Attack Power, Proc)
-			{spellID = 127926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Mithril Wristwatch (Spell Power, Proc)
-			{spellID = 127924, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Thousand-Year Pickled Egg (Haste, Proc)
-			{spellID = 127914, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Heirlooms
-			-- Infallible Tracking Charm [Damage, Proc]
-			{spellID = 201408, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Orb Of Voidsight (Haste, Proc)
-			{spellID = 201410, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 2.0: PvP Trinkets
-			-- Battlemaster (Health, Use)
-			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Damage [Agility] (Versatility, Proc)
-			{spellID = 182060, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tanking
-			-- Battering Talisman (Haste, Proc)
-			{spellID = 177102, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blast Furnace Door (Mastery, Proc)
-			{spellID = 177056, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Evergaze Arcane Eidolon (Bonus Armor, Proc)
-			{spellID = 177053, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Relic of Blood (Haste, Proc)
-			{spellID = 176937, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kyb's Foolish Perseverance (Health, Use)
-			{spellID = 176460, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Pol's Blinded Eye (Mastery, Use)
-			{spellID = 176876, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Stoneheart Idol (Crit, Proc)
-			{spellID = 176982, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tablet of Turnbuckle Teamwork (Bonus Armor, Use)
-			{spellID = 176873, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Anzu's Cursed Plume (Mastery, Proc)
-			{spellID = 183931, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Enforcer's Stun Grenade (Versatility, Use)
-			{spellID = 165534, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tyrant's Decree (Stamina, Proc)
-			{spellID = 184770, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Xeri'tac's Unhatched Egg Sac (Mastery, Proc)
-			{spellID = 165824, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Damage [Agility]
-			-- Beating Heart of the Mountain (Multistrike, Use)
-			{spellID = 176878, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blackheart Enforcer's Medallion (Multistrike, Proc)
-			{spellID = 176984, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Jar of Doom (Mastery, Proc)
-			{spellID = 176939, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Humming Blackiron Trigger (Crit, Proc)
-			{spellID = 177067, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Lucky Double-Sided Coin (Agility, Use)
-			{spellID = 177597, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Meaty Dragonspine Trophy (Haste, Proc)
-			{spellID = 177035, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Scales of Doom (Multistrike, Proc)
-			{spellID = 177038, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Gor'ashan's Lodestone Spike (Multistrike, Use)
-			{spellID = 165542, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kihra's Adrenaline Injector (Mastery, Use)
-			{spellID = 165485, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Malicious Censer (Agility, Proc)
-			{spellID = 183926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Mirror of the Blademaster (Images, Proc)
-			{spellID = 184270, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Soul Capacitator (Damage, Proc)
-			{spellID = 184293, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Witherbark's Branch (Haste, Proc)
-			{spellID = 165822, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Enchants
-			-- Mark of Blackrock (Bonus Armor)
-			{spellID = 159679, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Bleeding Hollow (Mastery)
-			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Shadowmoon (Spirit)
-			{spellID = 159678, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Frostwolf (Multistrike)
-			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Thunderlord (Crit)
-			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Warsong (Haste)
-			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
+			{spellID = 203819, unitID = "player", caster = "player", filter = "BUFF", absID = true},  -- 惡魔尖刺
+			{spellID = 218256, unitID = "player", caster = "player", filter = "BUFF", absID = true},  -- 強化結界
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -383,40 +252,9 @@ Filger_Spells = {
 			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
-			-- Darkness
-			{spellID = 209426, unitID = "target", caster = "player", filter = "BUFF"},
-			-- Brand of the Hunt
-			{spellID = 218640, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Vengeful Retreat
-			{spellID = 198813, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Chaos Nova
-			{spellID = 179057, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Nemesis
-			{spellID = 206491, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Fiery Brand
-			{spellID = 207744, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Fiery Demise
-			{spellID = 212818, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Frailty
-			{spellID = 224509, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Razor Spikes
-			{spellID = 210003, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Sigil of Flame
-			{spellID = 204598, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Sigil of Silence
-			{spellID = 204490, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Sigil of Chains
-			{spellID = 204843, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Sigil of Misery
-			{spellID = 207685, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Soul Carver
-			{spellID = 207407, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Bloodlet
-			{spellID = 207690, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Torment
-			{spellID = 185245, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Master of the Glaive
-			{spellID = 213405, unitID = "target", caster = "player", filter = "DEBUFF"},
+			{spellID = 198813, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 蠻恨撤離
+			{spellID = 207744, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 熾炎烙印
+			{spellID = 204598, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 火焰符印
 		},
 		--[[{
 			Name = "T_DE/BUFF_BAR",
@@ -444,89 +282,22 @@ Filger_Spells = {
 			IconSize = Misc.CDIconSize,
 			Position = {unpack(FilgerPositions.cooldown)},
 
-			-- Self
-			-- Consume Magic
-			{spellID = 183752, filter = "CD"},
-			-- Fel Rush
-			{spellID = 195072, filter = "CD", absID = true},
-			-- Infernal Strike
-			{spellID = 189110, filter = "CD"},
-			-- Torment
-			{spellID = 185245, filter = "CD"},
-			-- Demon Spikes
-			{spellID = 203720, filter = "CD"},
-			-- Immolation Aura
-			{spellID = 178740, filter = "CD"},
-			-- Felblade (Talent)
-			{spellID = 213241, filter = "CD"},
-			-- Throw Glaive
-			-- {spellID = 185123, filter = "CD"},
-			-- Soul Barrier (Talent)
-			{spellID = 227225, filter = "CD"},
-			-- Blade Dance
-			{spellID = 188499, filter = "CD"},
-			-- Fel Barrage (Talent)
-			{spellID = 211053, filter = "CD"},
-			-- Vengeful Retreat
-			{spellID = 198793, filter = "CD", absID = true},
-			-- Soul Carver (Artifact)
-			{spellID = 207407, filter = "CD"},
-			-- Sigil of Silence
-			{spellID = 202137, filter = "CD"},
-			-- Sigil of Misery
-			{spellID = 207684, filter = "CD"},
-			-- Empower Wards
-			{spellID = 218256, filter = "CD"},
-			-- Spectral Sight
-			{spellID = 188501, filter = "CD"},
-			-- Fiery Brand
-			{spellID = 204021, filter = "CD"},
-			-- Eye Beam
-			{spellID = 198013, filter = "CD", absID = true},
-			-- Chaos Nova
-			{spellID = 179057, filter = "CD", absID = true},
-			-- Sigil of Chains
-			{spellID = 202138, filter = "CD"},
-			-- Fel Eruption (Talent)
-			{spellID = 211881, filter = "CD"},
-			-- Fel Devastation (Talent)
-			{spellID = 212084, filter = "CD"},
-			-- Nether Bond (Talent)
-			{spellID = 207810, filter = "CD"},
-			-- Fury of the Illidari (Artifact)
-			{spellID = 201467, filter = "CD"},
-			-- Netherwalk (Talent)
-			{spellID = 196555, filter = "CD"},
-			-- Chaos Blades (Talent)
-			{spellID = 211048, filter = "CD"},
-			-- Nemesis (Talent)
-			{spellID = 206491, filter = "CD"},
-			-- Metamorphosis
-			{spellID = 187827, filter = "CD"},
-			-- Darkness
-			{spellID = 196718, filter = "CD"},
+			{spellID = 185245, filter = "CD"},  -- 折磨
+			{spellID = 217832, filter = "CD"},  -- 囚禁
+			--{spellID = 183752, filter = "CD"},  -- 吞噬魔法
 
-			-- Racial
-			-- Arcane Torrent (Blood Elf)
-			{spellID = 202719, filter = "CD"},
-			-- Shadowmeld (Night Elf)
-			{spellID = 58984, filter = "CD"},
+			{spellID = 198589, filter = "CD"},  -- 殘影
+			{spellID = 196718, filter = "CD"},  -- 蠻恨撤離
+			{spellID = 198793, filter = "CD"},  -- 黑暗
+			{spellID = 191427, filter = "CD", absID = true}, -- 惡魔化身(dps)
 
-			-- Items
-			-- Back
-			{slotID = 15, filter = "CD"},
-			-- Belt
-			{slotID = 6, filter = "CD"},
-			-- Gloves
-			{slotID = 10, filter = "CD"},
-			-- Neck
-			{slotID = 2, filter = "CD"},
-			-- Rings
-			{slotID = 11, filter = "CD"},
-			{slotID = 12, filter = "CD"},
-			-- Trinkets
-			{slotID = 13, filter = "CD"},
-			{slotID = 14, filter = "CD"},
+			--{spellID = 178740, filter = "CD"},  -- 獻祭光環
+			{spellID = 203819, filter = "CD"},  -- 惡魔尖刺
+			{spellID = 218256, filter = "CD"},  -- 強化結界
+			{spellID = 207744, filter = "CD"},  -- 熾炎烙印
+			{spellID = 187827, filter = "CD", absID = true}, -- 惡魔化身(tank)
+			{spellID = 207684, filter = "CD"},  -- 苦難符印
+			{spellID = 202137, filter = "CD"},  -- 沉默符印
 		},
 	},
 	["DRUID"] = {			--[小德]
@@ -588,8 +359,8 @@ Filger_Spells = {
 			{spellID = 114108, unitID = "player", caster = "player", filter = "BUFF"},
 			-- 丰饶
 			{spellID = 207640, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 激活
-			{spellID = 29166, unitID = "player", caster = "player", filter = "BUFF"},
+--			-- 激活
+--			{spellID = 29166, unitID = "player", caster = "player", filter = "BUFF"},
 			-- 铁鬃
 			{spellID = 192081, unitID = "player", caster = "player", filter = "BUFF"},
 			-- 乌索尔的印记
@@ -605,159 +376,6 @@ Filger_Spells = {
 			{spellID = 144871, unitID = "player", caster = "player", filter = "BUFF"},
 			-- 自然智慧 (治疗T17)
 			{spellID = 177794, unitID = "player", caster = "player", filter = "BUFF"},
-
---			-- Trinkets
---			-- 1.0: Darkmoon Cards
---			-- Caster DPS (Crit, Proc)
---			{spellID = 162919, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Healing (Spirit, Proc)
---			{spellID = 162913, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Melee DPS (Crit, Proc)
---			{spellID = 162915, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Tanking (Crit, Proc)
---			{spellID = 162917, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 1.1: Alchemy Stones
---			-- Agility
---			{spellID = 60233, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Intellect
---			{spellID = 60234, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 1.2: Hallow's End
---			-- Brawler's Statue (Bonus Armor, Use)
---			{spellID = 127967, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Coren's Cold Chromium (Attack Power, Proc)
---			{spellID = 127926, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Mithril Wristwatch (Spell Power, Proc)
---			{spellID = 127924, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Thousand-Year Pickled Egg (Haste, Proc)
---			{spellID = 127914, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 3.0: Heirlooms
---			-- Infallible Tracking Charm
---			{spellID = 201408, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Orb Of Voidsight
---			{spellID = 201410, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 2.0: PvP Trinkets
---			-- Battlemaster (Health, Use)
---			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Caster DPS (Versatility, Use)
---			{spellID = 182073, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Caster DPS (Versatility, Proc)
---			{spellID = 182058, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Melee DPS [Agility] (Versatility, Proc)
---			{spellID = 182060, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 3.0: Tanking
---			-- Battering Talisman (Haste, Proc)
---			{spellID = 177102, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Blast Furnace Door (Mastery, Proc)
---			{spellID = 177056, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Evergaze Arcane Eidolon (Bonus Armor, Proc)
---			{spellID = 177053, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Formidable Relic of Blood (Haste, Proc)
---			{spellID = 176937, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Kyb's Foolish Perseverance (Health, Use)
---			{spellID = 176460, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Pol's Blinded Eye (Mastery, Use)
---			{spellID = 176876, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Stoneheart Idol (Crit, Proc)
---			{spellID = 176982, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Tablet of Turnbuckle Teamwork (Bonus Armor, Use)
---			{spellID = 176873, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 3.1: Tanking
---			-- Anzu's Cursed Plume (Mastery, Proc)
---			{spellID = 183931, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Enforcer's Stun Grenade (Versatility, Use)
---			{spellID = 165534, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Tyrant's Decree (Stamina, Proc)
---			{spellID = 184770, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Xeri'tac's Unhatched Egg Sac (Mastery, Proc)
---			{spellID = 165824, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 4.0: Melee DPS [Agility]
---			-- Beating Heart of the Mountain (Multistrike, Use)
---			{spellID = 176878, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Blackheart Enforcer's Medallion (Multistrike, Proc)
---			{spellID = 176984, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Formidable Jar of Doom (Mastery, Proc)
---			{spellID = 176939, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Humming Blackiron Trigger (Crit, Proc)
---			{spellID = 177067, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Lucky Double-Sided Coin (Agility, Use)
---			{spellID = 177597, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Meaty Dragonspine Trophy (Haste, Proc)
---			{spellID = 177035, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Scales of Doom (Multistrike, Proc)
---			{spellID = 177038, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 4.1: Melee DPS [Agility]
---			-- Gor'ashan's Lodestone Spike (Multistrike, Use)
---			{spellID = 165542, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Kihra's Adrenaline Injector (Mastery, Use)
---			{spellID = 165485, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Malicious Censer
---			{spellID = 183926, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Mirror of the Blademaster (Images, Proc)
---			{spellID = 184270, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Soul Capacitator (Damage, Proc)
---			{spellID = 184293, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Witherbark's Branch (Haste, Proc)
---			{spellID = 165822, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 5.0: Caster DPS
---			-- Blackiron Micro Crucible (Multistrike, Proc)
---			{spellID = 177081, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Copeland's Clarity (Spellpower, Use)
---			{spellID = 177594, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Darmac's Unstoppable Talisman (Haste, Proc)
---			{spellID = 177051, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Formidable Orb of Putrescence (Mastery, Proc)
---			{spellID = 176941, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Furyheart Talisman (Haste, Proc)
---			{spellID = 176980, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Goren Soul Repository (Crit, Proc)
---			{spellID = 177046, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Shards of Nothing (Haste, Use)
---			{spellID = 176875, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 5.1: Caster DPS
---			-- Desecrated Shadowmoon Insignia (Intellect, Proc)
---			{spellID = 183924, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Coagulated Genesaur Blood (Multistrike, Proc)
---			{spellID = 165832, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Ragewing's Firefang (Versatility, Use)
---			{spellID = 165543, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Fleshrender's Meathook (Haste, Use)
---			{spellID = 165531, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 6.0: Healing
---			-- Auto-Repairing Autoclave (Haste, Proc)
---			{spellID = 177086, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Elementalist's Shielding Talisman (Multistrike, Proc)
---			{spellID = 177063, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Emblem of Caustic Healing (Haste, Use)
---			{spellID = 176879, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Formidable Censer of Faith (Haste, Proc)
---			{spellID = 176943, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Immaculate Living Mushroom (Crit, Proc)
---			{spellID = 176978, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Ironspike Chew Toy (Spirit, Proc)
---			{spellID = 177060, unitID = "player", caster = "player", filter = "BUFF"},
---			-- 6.1: Healing
---			-- Intuition's Gift (Crit, Use)
---			{spellID = 183929, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Leaf of the Ancient Protectors (Versatility, Proc)
---			{spellID = 165833, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Tharbek's Lucky Pebble (Mastery, Use)
---			{spellID = 165535, unitID = "player", caster = "player", filter = "BUFF"},
---			-- Voidmender's Shadowgem (Crit, Use)
---			{spellID = 165532, unitID = "player", caster = "player", filter = "BUFF"},
---
---			-- Enchants
---			-- Mark of Blackrock (Bonus Armor)
---			{spellID = 159679, unitID = "player", caster = "all", filter = "BUFF"},
---			-- Mark of Bleeding Hollow (Mastery)
---			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
---			-- Mark of Shadowmoon (Spirit)
---			{spellID = 159678, unitID = "player", caster = "all", filter = "BUFF"},
---			-- Mark of the Frostwolf (Multistrike)
---			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
---			-- Mark of the Thunderlord (Crit)
---			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
---			-- Mark of Warsong (Haste)
---			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -1468,30 +1086,16 @@ Filger_Spells = {
 			IconSize = Misc.IconSize,
 			Position = {unpack(FilgerPositions.player_buff_icon)},
 
-			-- Dampen Harm
-			{spellID = 122278, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Diffuse Magic
-			{spellID = 122783, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Elusive Brew
-			{spellID = 115308, unitID = "player", caster = "player", filter = "BUFF", absID = true},
-			-- Energizing Brew
-			{spellID = 115288, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Fortifying Brew
-			{spellID = 120954, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Momentum
-			{spellID = 119085, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Thunder Focus Tea
-			{spellID = 116680, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tigereye Brew
-			{spellID = 116740, unitID = "player", caster = "player", filter = "BUFF", absID = true},
-			-- Touch of Karma
-			{spellID = 125174, unitID = "player", caster = "player", filter = "BUFF"},
-			--轻度醉拳
-			--{spellID = 124275, unitID = "player", caster = "all", filter = "DEBUFF"},
-			--中度醉拳
-			--{spellID = 124274, unitID = "player", caster = "all", filter = "DEBUFF"},
-			--重度醉拳
-			{spellID = 124273, unitID = "player", caster = "all", filter = "DEBUFF"},
+            {spellID = 152173, unitID = "player", caster = "player", filter = "BUFF"},  -- Serenity 屏气凝神
+			{spellID = 116847, unitID = "player", caster = "player", filter = "BUFF"},	-- Rushing Jade Wind 碧玉疾风
+
+			{spellID = 137639, unitID = "player", caster = "player", filter = "BUFF"},	-- 風火大地
+			{spellID = 122783, unitID = "player", caster = "player", filter = "BUFF"},  -- 袪魔訣
+			{spellID = 125174, unitID = "player", caster = "player", filter = "BUFF"},  -- 乾坤挪移
+			{spellID = 122278, unitID = "player", caster = "player", filter = "BUFF"},  -- 卸勁訣
+
+			{spellID = 119085, unitID = "player", caster = "player", filter = "BUFF"},  -- 真氣飛龍穿
+			{spellID = 116841, unitID = "player", caster = "player", filter = "BUFF"},	-- 猛虎出匣
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -1502,134 +1106,12 @@ Filger_Spells = {
 			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
-			-- Buffs
-			-- Combo Breaker: Blackout Kick
-			{spellID = 116768, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Elusive Brew
-			{spellID = 128939, unitID = "player", caster = "player", filter = "BUFF", absID = true, count = 12},
-
-			-- Trinkets
-			-- 1.0: Darkmoon Cards
-			-- Healing (Spirit, Proc)
-			{spellID = 162913, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS (Crit, Proc)
-			{spellID = 162915, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tanking (Crit, Proc)
-			{spellID = 162917, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.1: Alchemy Stones
-			-- Agility
-			{spellID = 60233, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Intellect
-			{spellID = 60234, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 1.2: Hallow's End
-			-- Brawler's Statue (Bonus Armor, Use)
-			{spellID = 127967, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Coren's Cold Chromium (Attack Power, Proc)
-			{spellID = 127926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Thousand-Year Pickled Egg (Haste, Proc)
-			{spellID = 127914, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 2.0: PvP Trinkets
-			-- Battlemaster (Health, Use)
-			{spellID = 181706, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS [Agility] (Versatility, Use)
-			{spellID = 182073, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Melee DPS [Agility] (Versatility, Proc)
-			{spellID = 182060, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Heirlooms
-			-- Infallible Tracking Charm
-			{spellID = 201408, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Orb Of Voidsight
-			{spellID = 201410, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.0: Tanking
-			-- Battering Talisman (Haste, Proc)
-			{spellID = 177102, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blast Furnace Door (Mastery, Proc)
-			{spellID = 177056, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Evergaze Arcane Eidolon (Bonus Armor, Proc)
-			{spellID = 177053, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Relic of Blood (Haste, Proc)
-			{spellID = 176937, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kyb's Foolish Perseverance (Health, Use)
-			{spellID = 176460, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Pol's Blinded Eye (Mastery, Use)
-			{spellID = 176876, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Stoneheart Idol (Crit, Proc)
-			{spellID = 176982, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tablet of Turnbuckle Teamwork (Bonus Armor, Use)
-			{spellID = 176873, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 3.1: Tanking
-			-- Anzu's Cursed Plume (Mastery, Proc)
-			{spellID = 183931, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Enforcer's Stun Grenade (Versatility, Use)
-			{spellID = 165534, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tyrant's Decree (Stamina, Proc)
-			{spellID = 184770, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Xeri'tac's Unhatched Egg Sac (Mastery, Proc)
-			{spellID = 165824, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 4.0: Melee DPS [Agility]
-			-- Beating Heart of the Mountain (Multistrike, Use)
-			{spellID = 176878, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Blackheart Enforcer's Medallion (Multistrike, Proc)
-			{spellID = 176984, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Jar of Doom (Mastery, Proc)
-			{spellID = 176939, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Humming Blackiron Trigger (Crit, Proc)
-			{spellID = 177067, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Lucky Double-Sided Coin (Agility, Use)
-			{spellID = 177597, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Meaty Dragonspine Trophy (Haste, Proc)
-			{spellID = 177035, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Scales of Doom (Multistrike, Proc)
-			{spellID = 177038, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 4.1: Melee DPS [Agility]
-			-- Gor'ashan's Lodestone Spike (Multistrike, Use)
-			{spellID = 165542, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Kihra's Adrenaline Injector (Mastery, Use)
-			{spellID = 165485, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Malicious Censer
-			{spellID = 183926, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Mirror of the Blademaster (Images, Proc)
-			{spellID = 184270, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Soul Capacitator (Damage, Proc)
-			{spellID = 184293, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Witherbark's Branch (Haste, Proc)
-			{spellID = 165822, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 5.0: Healing
-			-- Auto-Repairing Autoclave (Haste, Proc)
-			{spellID = 177086, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Elementalist's Shielding Talisman (Multistrike, Proc)
-			{spellID = 177063, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Emblem of Caustic Healing (Haste, Use)
-			{spellID = 176879, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Formidable Censer of Faith (Haste, Proc)
-			{spellID = 176943, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Immaculate Living Mushroom (Crit, Proc)
-			{spellID = 176978, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Ironspike Chew Toy (Spirit, Proc)
-			{spellID = 177060, unitID = "player", caster = "player", filter = "BUFF"},
-			-- 5.1: Healing
-			-- Intuition's Gift (Crit, Use)
-			{spellID = 183929, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Leaf of the Ancient Protectors (Versatility, Proc)
-			{spellID = 165833, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tharbek's Lucky Pebble (Mastery, Use)
-			{spellID = 165535, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Voidmender's Shadowgem (Crit, Use)
-			{spellID = 165532, unitID = "player", caster = "player", filter = "BUFF"},
-
-			-- Enchants
-			-- Mark of Blackrock (Bonus Armor)
-			{spellID = 159679, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Bleeding Hollow (Mastery)
-			{spellID = 173322, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Shadowmoon (Spirit)
-			{spellID = 159678, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Frostwolf (Multistrike)
-			{spellID = 159676, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of the Thunderlord (Crit)
-			{spellID = 159234, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mark of Warsong (Haste)
-			{spellID = 159675, unitID = "player", caster = "all", filter = "BUFF"},
+            {spellID = 124275, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},   -- 轻度醉拳 綠燈
+			{spellID = 124274, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},   -- 中度醉拳 黃燈
+			{spellID = 124273, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},   -- 重度醉拳 紅燈
+			{spellID = 215479, unitID = "player", caster = "player", filter = "BUFF"},  -- 金鐘絕釀
+			{spellID = 196741, unitID = "player", caster = "player", filter = "BUFF"},  -- 連珠狂拳
+			{spellID = 195321, unitID = "player", caster = "player", filter = "BUFF"},  -- 內力轉化(轉化力量)
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -1640,10 +1122,9 @@ Filger_Spells = {
 			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
-			-- Breath of Fire
-			{spellID = 123725, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Heavy Stagger
-			{spellID = 124273, unitID = "player", caster = "player", filter = "DEBUFF"},
+			{spellID = 228287, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 鶴形
+			{spellID = 115804, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 翔陽腳
+			{spellID = 121253, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 酒罈破
 		},
 		--[[{
 			Name = "T_DE/BUFF_BAR",
@@ -1669,89 +1150,30 @@ Filger_Spells = {
 			IconSize = Misc.CDIconSize,
 			Position = {unpack(FilgerPositions.cooldown)},
 
-			-- Self
-			-- Chi Burst
-			{spellID = 123986, filter = "CD"},
-			-- Chi Wave
-			{spellID = 115098, filter = "CD"},
-			-- Dampen Harm
-			{spellID = 122278, filter = "CD"},
-			-- Detox
-			{spellID = 115450, filter = "CD"},
-			-- Energizing Brew
-			{spellID = 115288, filter = "CD"},
-			-- Expel Harm
-			{spellID = 115072, filter = "CD"},
-			-- Fists of Fury
-			{spellID = 113656, filter = "CD"},
-			-- Flying Serpent Kick
-			{spellID = 101545, filter = "CD"},
-			-- Invoke Xuen, the White Tiger
-			{spellID = 123904, filter = "CD"},
-			-- Life Cocoon
-			{spellID = 116849, filter = "CD"},
-			-- Paralysis
-			{spellID = 115078, filter = "CD"},
-			-- Provoke
-			{spellID = 115546, filter = "CD"},
-			-- Ring of Peace
-			{spellID = 116844, filter = "CD"},
-			-- Rising Sun Kick
-			{spellID = 107428, filter = "CD"},
-			-- Spear Hand Strike
-			{spellID = 116705, filter = "CD"},
-			-- Thunder Focus Tea
-			{spellID = 116680, filter = "CD"},
-			-- Touch of Karma
-			{spellID = 122470, filter = "CD"},
-			-- Touch of Death
-			{spellID = 115080, filter = "CD"},
-			-- Zen Sphere
-			{spellID = 124081, filter = "CD"},
+			{spellID = 119996, filter = "CD"},  -- 超凡入聖轉
+			{spellID = 101643, filter = "CD"},  -- 超凡入聖
+			{spellID = 115450, filter = "CD"},  -- 化毒袪病
+			{spellID = 115546, filter = "CD"},  -- 嘲心嘯
+			{spellID = 115078, filter = "CD"},  -- 點穴
+			--{spellID = 116705, filter = "CD"},  -- 天矛鎖喉手
 
-			-- Racial
-			-- Arcane Torrent (Blood Elf)
-			{spellID = 69179, filter = "CD"},
-			-- Escape Artist (Gnome)
-			{spellID = 20589, filter = "CD"},
-			-- Every Man for Himself (Human)
-			{spellID = 59752, filter = "CD"},
-			-- Gift of the Naaru (Draenei)
-			{spellID = 28880, filter = "CD"},
-			-- Berserking (Troll)
-			{spellID = 26297, filter = "CD"},
-			-- Blood Fury (Orc)
-			{spellID = 20572, filter = "CD"},
-			-- Cannibalize (Forsaken)
-			{spellID = 20577, filter = "CD"},
-			-- Quaking Palm (Pandaren)
-			{spellID = 107079, filter = "CD"},
-			-- Shadowmeld (Night Elf)
-			{spellID = 58984, filter = "CD"},
-			-- Stoneform (Dwarf)
-			{spellID = 20594, filter = "CD"},
-			-- War Stomp (Tauren)
-			{spellID = 20549, filter = "CD"},
-			-- Will of the Forsaken (Forsaken)
-			{spellID = 7744, filter = "CD"},
+			{spellID = 101545, filter = "CD"},  -- 翔龍腳
+			--{spellID = 113656, filter = "CD"},  -- 狂拳連打
+			{spellID = 115080, filter = "CD"},  -- 幽冥掌
+			{spellID = 137639, filter = "CD", absID = true},  -- 風火大地
+			{spellID = 152173, filter = "CD", absID = true},  -- 冰心訣
+			{spellID = 115288, filter = "CD"},  -- 凝神靈酒
+			{spellID = 123904, filter = "CD"},  -- 白虎
 
-			-- Items
-			-- Back
-			{slotID = 15, filter = "CD"},
-			-- Belt
-			{slotID = 6, filter = "CD"},
-			-- Gloves
-			{slotID = 10, filter = "CD"},
-			-- Neck
-			{slotID = 2, filter = "CD"},
-			-- Rings
-			{slotID = 11, filter = "CD"},
-			{slotID = 12, filter = "CD"},
-			-- Trinkets
-			{slotID = 13, filter = "CD"},
-			{slotID = 14, filter = "CD"},
+			{spellID = 115176, filter = "CD"},  -- 冥想
+			{spellID = 120954, filter = "CD"},  -- 石形絕釀
 
-			-- Internal
+			{spellID = 122470, filter = "CD"},  -- 乾坤挪移
+			{spellID = 122278, filter = "CD"},  -- 卸勁訣
+			{spellID = 122783, filter = "CD"},  -- 袪魔訣
+
+			{spellID = 116849, filter = "CD"},  -- 氣繭護體
+			--{spellID = 116844, filter = "CD"},  -- 和平之環
 		},
 	},
 	["PALADIN"] = {			--[圣骑]
@@ -2602,20 +2024,16 @@ Filger_Spells = {
 			IconSize = Misc.IconSize,
 			Position = {unpack(FilgerPositions.player_buff_icon)},
 
-			-- Ancestral Guidance
-			{spellID = 108281, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Ascendance
-			{spellID = 114049, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Astral Shift
-			{spellID = 108271, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Elemental Mastery
-			{spellID = 16166, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Spiritwalker's Grace
-			{spellID = 79206, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Stone Bulwark
-			{spellID = 114893, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Unleash Life
-			{spellID = 73685, unitID = "player", caster = "player", filter = "BUFF"},
+            {spellID = 201846, unitID = "player", caster = "player", filter = "BUFF"},  -- 風暴使者
+			{spellID = 215785, unitID = "player", caster = "player", filter = "BUFF"},  -- 炙手
+			{spellID = 187878, unitID = "player", caster = "player", filter = "BUFF"},  -- 閃電轟擊
+			{spellID = 195222, unitID = "player", caster = "player", filter = "BUFF"},  -- 風暴鞭笞
+			{spellID = 197211, unitID = "player", caster = "player", filter = "BUFF"},  -- 旋風之怒
+			{spellID = 202008, unitID = "player", caster = "player", filter = "BUFF"},  -- 崩石流土
+			{spellID = 58875 , unitID = "player", caster = "player", filter = "BUFF"},  -- 幽魂步伐
+			{spellID = 215864, unitID = "player", caster = "player", filter = "BUFF"},  -- 時雨
+
+			{spellID = 108271, unitID = "player", caster = "player", filter = "BUFF"},  -- 星界轉移
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -2626,15 +2044,11 @@ Filger_Spells = {
 			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
-			-- Buffs
-			-- Elemental Blast
-			{spellID = 118522, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Lava Surge
-			{spellID = 77762, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Tidal Waves
-			{spellID = 53390, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Elemental Fusion
-			--BETA {spellID = 157174, unitID = "player", caster = "player", filter = "BUFF"},
+            {spellID = 218825, unitID = "player", caster = "player", filter = "BUFF"},  -- 巨石拳
+			{spellID = 201898, unitID = "player", caster = "player", filter = "BUFF"},  -- 風之歌
+			{spellID = 194084, unitID = "player", caster = "player", filter = "BUFF"},  -- 火舌
+			{spellID = 196834, unitID = "player", caster = "player", filter = "BUFF"},  -- 冰封打擊
+			{spellID = 192106, unitID = "player", caster = "player", filter = "BUFF"},  -- 閃電之盾
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -2645,17 +2059,7 @@ Filger_Spells = {
 			IconSize = Misc.MidIconSize,
 			Position = {unpack(FilgerPositions.target_debuff_icon)},
 
-			-- Riptide
-			{spellID = 61295, unitID = "target", caster = "player", filter = "BUFF"},
-
-			-- Earthgrab
-			{spellID = 64695, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- 火焰震击
-			{spellID = 188389, unitID = "target", caster = "player", filter = "DEBUFF"},
-
-			-- Trinket Effects
-			-- Mark of Doom (Prophecy of Fear)
-			{spellID = 184073, unitID = "target", caster = "player", filter = "DEBUFF"},
+            {spellID = 197385, unitID = "target", caster = "player", filter = "DEBUFF"},  -- 旋風之怒
 		},
 		--[[{
 			Name = "T_DE/BUFF_BAR",
@@ -2684,8 +2088,7 @@ Filger_Spells = {
 			BarWidth = Misc.barw,
 			Position = {unpack(FilgerPositions.pve_cc)},
 
-			-- Hex
-			{spellID = 51514, unitID = "focus", caster = "player", filter = "DEBUFF"},
+			{spellID = 51514, unitID = "focus", caster = "player", filter = "DEBUFF"},  -- Hex 妖术
 		},
 		{
 			Name = "COOLDOWN",
@@ -2698,75 +2101,17 @@ Filger_Spells = {
 			IconSize = Misc.CDIconSize,
 			Position = {unpack(FilgerPositions.cooldown)},
 
-			-- Self
-			-- Ancestral Guidance
-			{spellID = 108281, filter = "CD"},
-			-- Ascendance
-			{spellID = 114049, filter = "CD"},
-			-- Astral Shift
-			{spellID = 108271, filter = "CD"},
-			-- Cleanse Spirit
-			{spellID = 51886, filter = "CD"},
-			-- Earthbind Totem
-			{spellID = 2484, filter = "CD"},
-			-- Earth Shock
-			{spellID = 8042, filter = "CD"},
-			-- Elemental Blast
-			{spellID = 117014, filter = "CD"},
-			-- Feral Spirit
-			{spellID = 51533, filter = "CD"},
-			-- Healing Rain
-			{spellID = 73920, filter = "CD"},
-			-- Hex
-			{spellID = 51514, filter = "CD"},
-			-- Lava Burst
-			{spellID = 51505, filter = "CD"},
-			-- Lava Lash
-			{spellID = 60103, filter = "CD"},
-			-- Riptide
-			{spellID = 61295, filter = "CD"},
-			-- Spiritwalker's Grace
-			{spellID = 79206, filter = "CD"},
-			-- Stone Bulwark Totem
-			{spellID = 108270, filter = "CD"},
-			-- Stormstrike
-			{spellID = 17364, filter = "CD"},
-			-- Thunderstorm
-			{spellID = 51490, filter = "CD"},
-			-- Wind Shear
-			{spellID = 57994, filter = "CD"},
+			{spellID = 51886 , filter = "CD"},  -- 淨化靈魂
+			{spellID = 108271, filter = "CD"},  -- 星界轉移
+			{spellID = 57994 , filter = "CD"},  -- 削風術
+			{spellID = 51514 , filter = "CD"},  -- 妖術
 
-			-- Racial
-			-- Berserking (Troll)
-			{spellID = 26297, filter = "CD"},
-			-- Blood Fury (Orc)
-			{spellID = 20572, filter = "CD"},
-			-- Gift of the Naaru (Draenei)
-			{spellID = 28880, filter = "CD"},
-			-- Quaking Palm (Pandaren)
-			{spellID = 107079, filter = "CD"},
-			-- Rocket Jump (Goblin)
-			{spellID = 69070, filter = "CD"},
-			-- Stoneform (Dwarf)
-			{spellID = 20594, filter = "CD"},
-			-- War Stomp (Tauren)
-			{spellID = 20549, filter = "CD"},
+			{spellID = 201898, filter = "CD"},  -- 風之歌
+			{spellID = 51533 , filter = "CD"},  -- 野性之魂
 
-			-- Items
-			-- Back
-			{slotID = 15, filter = "CD"},
-			-- Belt
-			{slotID = 6, filter = "CD"},
-			-- Gloves
-			{slotID = 10, filter = "CD"},
-			-- Neck
-			{slotID = 2, filter = "CD"},
-			-- Rings
-			{slotID = 11, filter = "CD"},
-			{slotID = 12, filter = "CD"},
-			-- Trinkets
-			{slotID = 13, filter = "CD"},
-			{slotID = 14, filter = "CD"},
+			{spellID = 51485 , filter = "CD"},  -- 地縛圖騰
+			{spellID = 192058, filter = "CD"},  -- 閃電奔流圖騰
+			{spellID = 196932, filter = "CD"},  -- 巫毒圖騰
 		},
 	},
 	["WARLOCK"] = {			--[术士]
@@ -3215,10 +2560,12 @@ Filger_Spells = {
 			IconSize = Misc.IconSize,
 			Position = {unpack(FilgerPositions.special_proc_icon)},
 
-			-- 激活
+			-- Innervate 激活
 			{spellID = 29166, unitID = "player", caster = "player", filter = "BUFF"},
+			-- Symbol of Hope 希望象征
+			{spellID = 64901, unitID = "player", caster = "player", filter = "BUFF"},
 
-			-- Ashran
+			-- Ashran 阿什兰
 			-- Ancient Artifact
 			{spellID = 168506, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Boulder Shield
@@ -3274,20 +2621,14 @@ Filger_Spells = {
 			{spellID = 176109, unitID = "player", caster = "player", filter = "BUFF", absID = true},
 
 			-- Raid Amplifiers: General
-			-- Ancient Hysteria
-			{spellID = 90355, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Netherwinds
-			{spellID = 160452, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Drums of Fury
-			{spellID = 178207, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Drums of Rage
-			{spellID = 146555, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Bloodlust
-			{spellID = 2825, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Heroism
-			{spellID = 32182, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Time Warp
-			{spellID = 80353, unitID = "player", caster = "all", filter = "BUFF"},
+			{spellID = 90355, unitID = "player", caster = "all", filter = "BUFF"},  -- Ancient Hysteria 远古狂乱
+			{spellID = 176030, unitID = "player", caster = "all", filter = "BUFF"},  -- Void Zephyr  虚空之风
+			{spellID = 178207, unitID = "player", caster = "all", filter = "BUFF"},  -- Drums of Fury 狂怒战鼓
+			{spellID = 2825, unitID = "player", caster = "all", filter = "BUFF"},  -- Bloodlust 嗜血
+			{spellID = 32182, unitID = "player", caster = "all", filter = "BUFF"},  -- Heroism 英勇
+			{spellID = 80353, unitID = "player", caster = "all", filter = "BUFF"},  -- Time Warp 时间扭曲
+--			{spellID = 160452, unitID = "player", caster = "all", filter = "BUFF"},  -- Netherwinds
+--			{spellID = 146555, unitID = "player", caster = "all", filter = "BUFF"},  -- Drums of Rage
 
 			-- Legendary Rings
 			-- Maalus, the Blood Drinker
@@ -3300,11 +2641,11 @@ Filger_Spells = {
 			{spellID = 187619, unitID = "player", caster = "all", filter = "BUFF"},
 
 			-- Professions
-			-- Goblin Glider [Goblin Glider Kit]
+			-- Goblin Glider [Goblin Glider Kit] 降落伞
 			{spellID = 126389, unitID = "player", caster = "all", filter = "BUFF", absID = true},
-			-- Nitro Boosts
+			-- Nitro Boosts 火箭靴
 			{spellID = 54861, unitID = "player", caster = "player", filter = "BUFF"},
-			-- Parachute
+			-- Parachute 降落伞
 			{spellID = 55001, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Shieldtronic Shield
 			{spellID = 173260, unitID = "player", caster = "all", filter = "BUFF", absID = true},
@@ -3333,42 +2674,64 @@ Filger_Spells = {
 			-- Strange Feeling (Brawler's Guild)
 			{spellID = 134851, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},
 
-			-- Damage Reduction
-			-- Life Cocoon
-			{spellID = 116849, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Guardian Spirit
-			{spellID = 47788, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Pain Suppression
-			{spellID = 33206, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Ironbark
+			-- Single Damage Reduction
+			-- Ironbark 铁木树皮
 			{spellID = 102342, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Aura Mastery
-			{spellID = 31821, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Blessing of Protection
+			-- Pain Suppression 痛苦压制
+			{spellID = 33206, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Life Cocoon 作茧自缚
+			{spellID = 116849, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Blessing of Protection 保护祝福
 			{spellID = 1022, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Blessing of Sacrifice
+			-- Blessing of Sacrifice 牺牲祝福
 			{spellID = 6940, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Vigilance
-			{spellID = 114030, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Rallying Cry
-			{spellID = 97463, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Blessing of Spellwarding 破咒祝福
+			{spellID = 204018, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Guardian Spirit 守护之魂
+			{spellID = 47788, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Nether Bond 虚空联结
+			{spellID = 207810, unitID = "player", caster = "all", filter = "BUFF"},
+
+			-- Party Damage Reduction
+			-- Power Word: Barrier 真言术：障
+			{spellID = 62618, unitID = "player", caster = "all", filter = "BUFF"},
+            -- Spirit Link Totem 灵魂链接图腾
+			{spellID = 98008, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Aura Mastery 光环精通
+			{spellID = 31821, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Aegis of Light 圣光护盾
+			{spellID = 204150, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Commanding Shout 命令怒吼
+			{spellID = 97462, unitID = "player", caster = "all", filter = "BUFF"},
+            -- Ancestral Protection Totem 先祖护佑图腾
+			{spellID = 207399, unitID = "player", caster = "all", filter = "BUFF"},
+            -- Earthen Shield Totem 大地之盾图腾
+			{spellID = 198838, unitID = "player", caster = "all", filter = "BUFF"},
+            -- Darkness 幻影打击
+			{spellID = 196718, unitID = "player", caster = "all", filter = "BUFF"},
+--            -- Commanding Shout 命令怒吼
+--			{spellID = 97462, unitID = "player", caster = "all", filter = "BUFF"},
+--            -- Commanding Shout 命令怒吼
+--			{spellID = 97462, unitID = "player", caster = "all", filter = "BUFF"},
 
 			-- Other
-			-- Grounding Totem
-			{spellID = 8178, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Mass Spell Reflection
-			{spellID = 114028, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Grounding Totem
+--			{spellID = 8178, unitID = "player", caster = "all", filter = "BUFF"},
+--			-- Mass Spell Reflection
+--			{spellID = 114028, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Tiger's Lust
 			{spellID = 116841, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Body and Soul
 			{spellID = 65081, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Angelic Feather
 			{spellID = 121557, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Stampeding Roar
-			{spellID = 77764, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Blessing of Freedom
+			-- Stampeding Roar 狂奔怒吼
+			{spellID = 106898, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Wind Rush Totem 狂风图腾
+			{spellID = 192077, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Blessing of Freedom 自由祝福
 			{spellID = 1044, unitID = "player", caster = "all", filter = "BUFF"},
-			-- Slow Fall
+			-- Slow Fall 缓落术
 			{spellID = 130, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Levitate
 			{spellID = 1706, unitID = "player", caster = "all", filter = "BUFF"},
@@ -4421,6 +3784,176 @@ Filger_Spells = {
 			{spellID = 63050, unitID = "player", caster = "all", filter = "DEBUFF"},
 
 			-- 要塞 824
+
+            -- T19
+			{spellID = 203045, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	感染之地
+			{spellID = 203096, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐爛
+			{spellID = 204463, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烈性腐爛
+			{spellID = 203646, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化爆裂
+			{spellID = 202978, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	感染之息
+			{spellID = 205043, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	心智寄生
+
+			{spellID = 210099, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	鎖定
+			{spellID = 209469, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化之觸
+			{spellID = 210984, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	命運之眼
+			{spellID = 208697, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	精神鞭笞
+			{spellID = 208929, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	噴吐腐化
+			{spellID = 212886, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘腐化
+			{spellID = 215128, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	詛咒之血
+			{spellID = 215836, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	死亡綻放
+			{spellID = 215845, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	散化孢子
+			{spellID = 209471, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘爆炸
+
+			{spellID = 210228, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	滴毒尖牙
+			{spellID = 215300, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	痛苦蛛網
+			{spellID = 215307, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	痛苦蛛網
+			{spellID = 213124, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毒液之池
+			{spellID = 215489, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毒液之池
+			{spellID = 215460, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	亡域毒液
+			{spellID = 215582, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	掃擊之爪
+			{spellID = 210850, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	扭曲暗影
+			{spellID = 218124, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	猛烈強風
+			{spellID = 218144, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	猛烈強風
+			{spellID = 218519, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	風之灼傷
+
+			{spellID = 197943, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	全面壓制
+			{spellID = 204859, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	撕裂血肉
+			{spellID = 198006, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	專注凝視
+			{spellID = 198108, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	衝力
+			{spellID = 198388, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	血之狂暴
+			{spellID = 198392, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	不諧回音
+			{spellID = 205611, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	瘴氣
+			{spellID = 197980, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	惡夢絕叫
+
+			{spellID = 207681, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘之花
+			{spellID = 204731, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	恐懼破壞力
+			{spellID = 204040, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	暗影衝擊
+			{spellID = 204044, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	暗影衝擊
+			{spellID = 205341, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	迷霧蔓延
+			{spellID = 203121, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	泰拉爾印記
+			{spellID = 203124, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	雷索印記
+			{spellID = 203125, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	艾莫莉絲印記
+			{spellID = 203102, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	伊索德雷印記
+			{spellID = 203110, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘沉睡
+			{spellID = 203770, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	褻瀆藤蔓
+			{spellID = 203787, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	快速傳染
+			{spellID = 204078, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	低沉咆哮
+			{spellID = 214543, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	崩塌夢魘
+
+			{spellID = 210279, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	蔓延夢魘
+			{spellID = 210315, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘刺藤
+			{spellID = 211507, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘標槍
+			{spellID = 211471, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	鄙惡之觸
+			{spellID = 213162, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘衝擊
+
+			{spellID = 206005, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢境傀儡
+			{spellID = 206109, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	從夢魘中甦醒
+			{spellID = 206651, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	暗蝕靈魂
+			{spellID = 209158, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	黑蝕靈魂
+			{spellID = 210451, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	恐懼束縛
+			{spellID = 209034, unitID = "player", caster = "all", filter = "DEBUFF", absID = true}, --	恐懼束縛
+			{spellID = 208431, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化：墜入瘋狂
+			{spellID = 207409, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化：瘋狂
+			{spellID = 208385, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化滲液
+			{spellID = 211802, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夢魘之刃
+			{spellID = 224508, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化隕石
+			{spellID = 205771, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	痛苦凝視
+			{spellID = 211634, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	無限黑暗
+
+			{spellID = 211659, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法束鍊
+			{spellID = 204531, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法束鍊
+			{spellID = 204284, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	破損裂片
+			{spellID = 204766, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	能量奔騰
+			{spellID = 204483, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	集中爆炸
+			{spellID = 204744, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	有毒甲殼
+			{spellID = 214718, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	酸液碎片
+
+			{spellID = 212099, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時光強化
+			{spellID = 206607, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時光粒子
+			{spellID = 206617, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	定時炸彈
+			{spellID = 205707, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時光球體
+			{spellID = 206641, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法斬擊
+
+			{spellID = 214573, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	塞滿滿
+			{spellID = 206488, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法滲流
+			{spellID = 206798, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毒蛋糕
+			{spellID = 206838, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	多汁盛宴
+			{spellID = 208499, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	消毒
+			{spellID = 211615, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	消毒
+			{spellID = 208910, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	弧光連結
+			{spellID = 208915, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	弧光連結
+			{spellID = 207631, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	殲滅
+			{spellID = 206645, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	法力爆裂
+
+			{spellID = 215458, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	殲滅
+			{spellID = 212531, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	冰霜印記
+			{spellID = 212587, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	冰霜印記
+			{spellID = 212647, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	冰霜咬噬
+			{spellID = 213148, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	灼燒烙印
+			{spellID = 213181, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	灼燒烙印
+			{spellID = 213166, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	灼燒烙印
+			{spellID = 213504, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法魔霧
+			{spellID = 212736, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	冰霜之池
+			{spellID = 213278, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	燃燒大地
+
+			{spellID = 206480, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐屍瘟疫
+			{spellID = 208230, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	血肉盛宴
+			{spellID = 206311, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	幻象之夜
+			{spellID = 212794, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	阿古斯烙印
+			{spellID = 215988, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐肉夢魘
+			{spellID = 206466, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夜之精華
+			{spellID = 216024, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	易變之傷
+			{spellID = 216027, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	虛無領域
+			{spellID = 216040, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	燃燒之魂
+			{spellID = 216685, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	阿古斯之焰
+			{spellID = 206677, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	灼燒烙印
+
+			{spellID = 205344, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毀滅之球
+			{spellID = 218342, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	寄生專注
+			{spellID = 218503, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	遞迴打擊
+			{spellID = 218780, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	電漿爆炸
+			{spellID = 218304, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	寄生束縛
+			{spellID = 218809, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	夜晚呼喚
+			{spellID = 219235, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毒性孢子
+			{spellID = 219270, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	蔓生術
+
+			{spellID = 206965, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	虛無爆發
+			{spellID = 206388, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	魔化爆發
+			{spellID = 206464, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	星環噴發
+			{spellID = 214167, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	重力牽引
+			{spellID = 205984, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	重力牽引
+			{spellID = 214335, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	重力牽引
+			{spellID = 206398, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	魔焰
+			{spellID = 205649, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	魔化轟擊
+			{spellID = 206936, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	寒冰彈射
+			{spellID = 207720, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	見證虛無
+			{spellID = 206585, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	絕對零度
+			{spellID = 206589, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	冰凍
+			{spellID = 207831, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	大三角
+			{spellID = 205445, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	星座：貪狼
+			{spellID = 205429, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	星座：巨蟹
+			{spellID = 217046, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	遺骸吞噬中
+			{spellID = 216345, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	星座：獵戶
+			{spellID = 216344, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	星座：飛龍
+
+			{spellID = 209166, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時光加快
+			{spellID = 209165, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時光遲緩
+			{spellID = 209433, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	擴展奇異點
+			{spellID = 208659, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法之環
+			{spellID = 211261, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	恆增折磨
+			{spellID = 209244, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	滅時光束
+			{spellID = 209598, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	交映爆發
+			{spellID = 209615, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	燒蝕
+			{spellID = 209973, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	燒蝕爆炸
+			{spellID = 211885, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	燒蝕
+			{spellID = 210339, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時間擴張
+
+			{spellID = 206875, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	魔能石碑
+			{spellID = 206840, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	維希茲凝視
+			{spellID = 206896, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	被撕開的靈魂
+			{spellID = 206221, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	強化惡魔束縛
+			{spellID = 208802, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	靈魂腐敗
+			{spellID = 212686, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	薩格拉斯之焰
 		},
 		{
 			Name = "T_BUFF",
@@ -4466,6 +3999,8 @@ Filger_Spells = {
 			-- Debuffs
 			-- Imprison
 			{spellID = 217832, unitID = "target", caster = "all", filter = "DEBUFF"},
+			-- Chaos Nova 混乱新星
+			{spellID = 179057, unitID = "target", caster = "all", filter = "DEBUFF"},
 
 			-- Druid
 			-- Barkskin
@@ -4495,6 +4030,8 @@ Filger_Spells = {
 			{spellID = 163505, unitID = "target", caster = "all", filter = "DEBUFF", absID = true},
 			-- Solar Beam
 			{spellID = 78675, unitID = "target", caster = "all", filter = "DEBUFF"},
+			-- Solar Beam 日光术
+			{spellID = 97547, unitID = "target", caster = "all", filter = "DEBUFF"},
 
 			-- Hunter
 			-- Deterrence
@@ -4625,17 +4162,18 @@ Filger_Spells = {
 			{spellID = 76577, unitID = "target", caster = "all", filter = "DEBUFF"},
 
 			-- Shaman
-			-- Grounding Totem
-			{spellID = 8178, unitID = "target", caster = "all", filter = "BUFF"},
+--			-- Grounding Totem
+--			{spellID = 8178, unitID = "target", caster = "all", filter = "BUFF"},
 			-- Spiritwalker's Grace
 			{spellID = 79206, unitID = "target", caster = "all", filter = "BUFF"},
-			-- Debuffs
-			-- Hex
-			{spellID = 51514, unitID = "target", caster = "all", filter = "DEBUFF"},
 			-- Pulverize (Earth Elemental)
 			{spellID = 118345, unitID = "target", caster = "all", filter = "DEBUFF"},
 			-- Static Charge
 			{spellID = 118905, unitID = "target", caster = "all", filter = "DEBUFF"},
+			{spellID = 51514, unitID = "target", caster = "all", filter = "DEBUFF", absID = true},  -- Hex 妖术
+			{spellID = 196932, unitID = "target", caster = "all", filter = "DEBUFF", absID = true},  -- Voodoo Totem 巫毒图腾
+            {spellID = 202318, unitID = "target", caster = "all", filter = "DEBUFF", absID = true},  -- 妖术疲惫
+			{spellID = 192058, unitID = "target", caster = "all", filter = "DEBUFF"},  -- Lightning Surge Totem 闪电喷涌图腾
 
 			-- Warlock
 			-- Soulstone
@@ -4665,6 +4203,8 @@ Filger_Spells = {
 			{spellID = 30283, unitID = "target", caster = "all", filter = "DEBUFF"},
 			-- Unstable Affliction
 			{spellID = 31117, unitID = "target", caster = "all", filter = "DEBUFF", absID = true},
+			-- Shockwave 震荡波
+			{spellID = 46968, unitID = "target", caster = "all", filter = "DEBUFF"},
 
 			-- Warrior
 			-- Berserker Rage
