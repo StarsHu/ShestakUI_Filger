@@ -320,10 +320,11 @@ Filger_Spells = {
 			{spellID = 164547, unitID = "player", caster = "player", filter = "BUFF"},  -- Lunar Empower
 			{spellID = 170856, unitID = "player", caster = "player", filter = "BUFF"},  -- Nature's Grasp
 			{spellID = 124974, unitID = "player", caster = "player", filter = "BUFF"},  -- Nature's Vigil
-			{spellID = 52610, unitID = "player", caster = "player", filter = "BUFF"},  -- Savage Roar 凶蛮咆哮
 			{spellID = 164545, unitID = "player", caster = "player", filter = "BUFF"},  -- Solar Empower
-			{spellID = 61336, unitID = "player", caster = "player", filter = "BUFF"},  -- Survival Instincts
+			{spellID = 61336, unitID = "player", caster = "player", filter = "BUFF"},  -- Survival Instincts 生存本能
 			{spellID = 5217, unitID = "player", caster = "player", filter = "BUFF"},  -- Tiger's Fury 猛虎之怒
+			{spellID = 208253, unitID = "player", caster = "player", filter = "BUFF"},  -- 加尼尔的精华
+			{spellID = 200851, unitID = "player", caster = "player", filter = "BUFF"},  -- 沉睡者之怒
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -335,6 +336,7 @@ Filger_Spells = {
 			Position = {unpack(FilgerPositions.player_proc_icon)},
 
 			-- Buffs
+			{spellID = 52610, unitID = "player", caster = "player", filter = "BUFF"},  -- Savage Roar 凶蛮咆哮
 			{spellID = 145152, unitID = "player", caster = "player", filter = "BUFF"},  -- Bloodtalons
 			{spellID = 16870, unitID = "player", caster = "player", filter = "BUFF"},  -- Clearcasting
 			{spellID = 69369, unitID = "player", caster = "player", filter = "BUFF"},  -- Predatory Swiftness
@@ -345,6 +347,7 @@ Filger_Spells = {
 			{spellID = 192083, unitID = "player", caster = "player", filter = "BUFF"},  -- 乌索尔的印记
 			{spellID = 158792, unitID = "player", caster = "player", filter = "BUFF"},  -- 粉碎
 			{spellID = 22842, unitID = "player", caster = "player", filter = "BUFF"},  -- 狂暴回复
+			{spellID = 189877, unitID = "player", caster = "player", filter = "BUFF"},  -- 大德鲁伊的力量
 
 			
 			-- Item sets 套装
@@ -1992,9 +1995,14 @@ Filger_Spells = {
 			{spellID = 197211, unitID = "player", caster = "player", filter = "BUFF"},  -- 旋風之怒
 			{spellID = 202008, unitID = "player", caster = "player", filter = "BUFF"},  -- 崩石流土
 			{spellID = 58875 , unitID = "player", caster = "player", filter = "BUFF"},  -- 幽魂步伐
+			{spellID = 192082 , unitID = "player", caster = "player", filter = "BUFF"},  -- 幽魂步伐
 			{spellID = 215864, unitID = "player", caster = "player", filter = "BUFF"},  -- 時雨
 
+			{spellID = 114052, unitID = "player", caster = "player", filter = "BUFF"},  -- 升腾
+
 			{spellID = 108271, unitID = "player", caster = "player", filter = "BUFF"},  -- 星界轉移
+			{spellID = 201633, unitID = "player", caster = "player", filter = "BUFF"},  -- 大地之盾图腾
+			{spellID = 79206, unitID = "player", caster = "player", filter = "BUFF"},  -- 灵魂行者的恩赐
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -2010,6 +2018,11 @@ Filger_Spells = {
 			{spellID = 194084, unitID = "player", caster = "player", filter = "BUFF"},  -- 火舌
 			{spellID = 196834, unitID = "player", caster = "player", filter = "BUFF"},  -- 冰封打擊
 			{spellID = 192106, unitID = "player", caster = "player", filter = "BUFF"},  -- 閃電之盾
+			{spellID = 92930, unitID = "player", caster = "player", filter = "BUFF"},  -- 治疗大雨
+			{spellID = 53390, unitID = "player", caster = "player", filter = "BUFF"},  -- 潮汐奔涌
+			{spellID = 73685, unitID = "player", caster = "player", filter = "BUFF"},  -- 生命释放
+			{spellID = 207288, unitID = "player", caster = "player", filter = "BUFF"},  -- 女王崛起
+			{spellID = 216251, unitID = "player", caster = "player", filter = "BUFF"},  -- 波动
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -2523,6 +2536,9 @@ Filger_Spells = {
 
 			{spellID = 29166, unitID = "player", caster = "player", filter = "BUFF"},  -- Innervate 激活
 			{spellID = 64901, unitID = "player", caster = "player", filter = "BUFF"},  -- Symbol of Hope 希望象征
+
+			{spellID = 215294, unitID = "player", caster = "player", filter = "BUFF"},  -- 召气雾云
+			{spellID = 215632, unitID = "player", caster = "player", filter = "BUFF"},  -- 专注闪电
 
 			-- Ashran 阿什兰
 			{spellID = 168506, unitID = "player", caster = "all", filter = "BUFF"},  -- Ancient Artifact
@@ -3747,10 +3763,10 @@ Filger_Spells = {
 			{spellID = 210340, unitID = "target", caster = "all", filter = "BUFF", absID = true},	--	恐惧荆棘光环
 			{spellID = 210279, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	蠕行梦魇
 			{spellID = 210315, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	梦魇荆棘
-			{spellID = 211612, unitID = "player", caster = "all", filter = "BUFF", absID = true},	--	恢复根须
-			{spellID = 211989, unitID = "player", caster = "all", filter = "BUFF", absID = true},	--	狂暴之触
-			{spellID = 211990, unitID = "player", caster = "all", filter = "BUFF", absID = true},	--	狂暴精华
-			{spellID = 216516, unitID = "player", caster = "all", filter = "BUFF", absID = true},	--	上古之梦
+			{spellID = 211612, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	恢复根须
+			{spellID = 211989, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	狂暴之触
+			{spellID = 211990, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	狂暴精华
+			{spellID = 216516, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	上古之梦
 			{spellID = 211507, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	梦魇长枪
 			{spellID = 211471, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	轻蔑之触
 			{spellID = 213162, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	梦魇冲击
