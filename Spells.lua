@@ -325,6 +325,7 @@ Filger_Spells = {
 			{spellID = 5217, unitID = "player", caster = "player", filter = "BUFF"},  -- Tiger's Fury 猛虎之怒
 			{spellID = 208253, unitID = "player", caster = "player", filter = "BUFF"},  -- 加尼尔的精华
 			{spellID = 200851, unitID = "player", caster = "player", filter = "BUFF"},  -- 沉睡者之怒
+			{spellID = 106951, unitID = "player", caster = "player", filter = "BUFF"},  -- 狂暴
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -2147,8 +2148,13 @@ Filger_Spells = {
 			{spellID = 348, unitID = "target", caster = "player", filter = "DEBUFF"},
 			-- Seed of Corruption
 			{spellID = 27243, unitID = "target", caster = "player", filter = "DEBUFF"},
-			-- Unstable Affliction
-			{spellID = 30108, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},
+--			-- Unstable Affliction
+--			{spellID = 30108, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},
+			{spellID = 233490, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},  -- 痛苦无常
+			{spellID = 233496, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},  -- 痛苦无常
+			{spellID = 233497, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},  -- 痛苦无常
+			{spellID = 233498, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},  -- 痛苦无常
+			{spellID = 233499, unitID = "target", caster = "player", filter = "DEBUFF", absID = true},  -- 痛苦无常
 
 			-- Self
 			-- Enslave Demon
@@ -2539,6 +2545,7 @@ Filger_Spells = {
 
 			{spellID = 215294, unitID = "player", caster = "player", filter = "BUFF"},  -- 召气雾云
 			{spellID = 215632, unitID = "player", caster = "player", filter = "BUFF"},  -- 专注闪电
+			{spellID = 215956, unitID = "player", caster = "player", filter = "BUFF"},  -- 号角
 
 			-- Ashran 阿什兰
 			{spellID = 168506, unitID = "player", caster = "all", filter = "BUFF"},  -- Ancient Artifact
@@ -3786,6 +3793,44 @@ Filger_Spells = {
 			{spellID = 205771, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	折磨锁定
 			{spellID = 211634, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	永恒黑暗
 
+            -- << 勇气试炼 >> --
+			-- 奥丁
+			{spellID = 228932, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	雷铸之矛
+			{spellID = 228918, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	雷铸之矛
+			{spellID = 227490, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烙印
+			{spellID = 227491, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烙印
+			{spellID = 227498, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烙印
+			{spellID = 227499, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烙印
+			{spellID = 227500, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烙印
+			{spellID = 227807, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	正义风暴
+			{spellID = 227781, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	光耀碎片
+			{spellID = 227475, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	净化火焰
+			{spellID = 228029, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	驱逐之光
+			{spellID = 228007, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	舞动之刃
+			-- 高姆
+			{spellID = 228769, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	黑暗宣泄
+			{spellID = 228758, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	烈火黏质
+			{spellID = 228768, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	盐水唾沫
+			{spellID = 228228, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	火舌舔舐
+            -- 海拉
+			{spellID = 227982, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毒水氧化
+			{spellID = 228054, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	海洋污染
+			{spellID = 193367, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	恶臭溃烂
+			{spellID = 229119, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐蚀宝珠
+			{spellID = 228127, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化物
+			{spellID = 228055, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	巨喉之怒
+			{spellID = 228519, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	铁锚猛击
+			{spellID = 230197, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	黑暗水域
+			{spellID = 227998, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	毒水腐蚀
+			{spellID = 230267, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化宝珠
+			{spellID = 232488, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	黑暗仇恨
+			{spellID = 232450, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	腐化脊髓
+			{spellID = 228803, unitID = "target", caster = "all", filter = "BUFF", absID = true},	--	酝酿风暴
+			{spellID = 201119, unitID = "target", caster = "all", filter = "BUFF", absID = true},	--	暴怒的风暴元素
+			{spellID = 228300, unitID = "target", caster = "all", filter = "BUFF", absID = true},	--	巨喉之怒
+			{spellID = 203816, unitID = "target", caster = "all", filter = "BUFF", absID = true},	--	精力
+			{spellID = 228611, unitID = "target", caster = "all", filter = "BUFF", absID = true},	--	幽灵怒火
+
             -- << 暗夜要塞 >> --
 			{spellID = 211659, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法束鍊
 			{spellID = 204531, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	秘法束鍊
@@ -3875,12 +3920,14 @@ Filger_Spells = {
 			{spellID = 211885, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	燒蝕
 			{spellID = 210339, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	時間擴張
 
-			{spellID = 206875, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	魔能石碑
-			{spellID = 206840, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	維希茲凝視
-			{spellID = 206896, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	被撕開的靈魂
-			{spellID = 206221, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	強化惡魔束縛
-			{spellID = 208802, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	靈魂腐敗
-			{spellID = 212686, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	薩格拉斯之焰
+			{spellID = 210339, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	时间延长
+			{spellID = 206875, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	邪能方尖碑
+			{spellID = 206840, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	维斯瑞兹的凝视
+			{spellID = 206896, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	撕裂灵魂
+			{spellID = 206221, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	强化邪能束缚
+			{spellID = 208802, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	灵魂腐蚀
+			{spellID = 212686, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	萨格拉斯之焰
+			{spellID = 180079, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},	--	邪火弹药
 		},
 		{
 			Name = "T_BUFF",
