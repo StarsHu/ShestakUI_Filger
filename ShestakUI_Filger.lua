@@ -65,7 +65,7 @@ function Filger:UnitBuff(unitID, inSpellID, spn, absID)
 			end
 		end
 	else
-		return UnitBuff(unitID, spn)
+		return AuraUtil.FindAuraByName(spn, unitID)
 	end
 	return nil
 end
@@ -80,7 +80,7 @@ function Filger:UnitDebuff(unitID, inSpellID, spn, absID)
 			end
 		end
 	else
-		return UnitDebuff(unitID, spn)
+		return AuraUtil.FindAuraByName(spn, unitID, 'HARMFUL')
 	end
 	return nil
 end
