@@ -1,7 +1,9 @@
 local _, ns = ...
 local Misc = ns.Misc
 
-Filger_Spells = {
+local FilgerPositions = Misc.FilgerPositions
+
+Misc.Filger_Spells = {
     ["DEATHKNIGHT"] = {
         --[死骑]
         {

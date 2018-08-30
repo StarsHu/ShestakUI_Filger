@@ -1,4 +1,4 @@
-﻿## Interface: 70100
+﻿## Interface: 80000
 ## Title: ShestakUI Filger
 ## Notes: Class timers
 ## Notes-zhCN: |cffC495DD法术计时器|r
@@ -9,6 +9,6 @@
 ## Website: http://shestak.org
 
 Settings.lua
+Positions.lua
 Spells.lua
 ShestakUI_Filger.lua
-Commands.lua
