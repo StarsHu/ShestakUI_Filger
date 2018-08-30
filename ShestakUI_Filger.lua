@@ -578,7 +578,6 @@ end
 
 -- TestMode module
 Misc.Move = function()
-    testMode = not testMode
     for i = 1, #Filger_Spells[class], 1 do
         local data = Filger_Spells[class][i]
         local frame = _G["FilgerFrame" .. i .. "_" .. data.Name]
@@ -605,11 +604,10 @@ Misc.Move = function()
         end
         Filger.DisplayActives(frame)
     end
-    return testMode
 end
 
 if TestMode then
-    local enable = Misc.Move()
+    Misc.Move()
 end
 
 -- Commands module
@@ -617,8 +615,8 @@ local FilgerCommand = function(msg)
     msg = string.lower(msg)
     if msg == "test" then
         if UnitAffectingCombat("player") then print("|cffffff00" .. ERR_NOT_IN_COMBAT .. "|r") return end
-        local movable = Misc.Move()
-        --		print(tostring(movable))
+        testMode = not testMode
+        Misc.Move()
     elseif msg == "reset" then
         for i = 1, #Filger_Spells[class], 1 do
             local data = Filger_Spells[class][i]
@@ -627,8 +625,8 @@ local FilgerCommand = function(msg)
             frame.movebar:SetPoint(unpack(data.Position))
         end
     else
-        print("|cffffff00/Filger test   解锁/锁定|r")
-        print("|cffffff00/Filger reset  重置|r")
+        print("|cffffff00/filger test   解锁/锁定|r")
+        print("|cffffff00/filger reset  重置|r")
     end
 end
 
