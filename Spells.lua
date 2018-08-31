@@ -2892,54 +2892,15 @@ Filger_Spells = {
             IconSize = Misc.IconSize,
             Position = { unpack(FilgerPositions.special_proc_icon) },
 
-            { spellID = 215294, unitID = "player", caster = "player", filter = "BUFF" }, -- 召气雾云
-            { spellID = 215632, unitID = "player", caster = "player", filter = "BUFF" }, -- 专注闪电
-            { spellID = 215956, unitID = "player", caster = "player", filter = "BUFF" }, -- 号角
+            -- Potions: BFA
+            { spellID = 279151, unitID = "player", caster = "player", filter = "BUFF" }, -- battle-potion-of-intellect
+            { spellID = 279152, unitID = "player", caster = "player", filter = "BUFF" }, -- battle-potion-of-agility
+            { spellID = 279153, unitID = "player", caster = "player", filter = "BUFF" }, -- battle-potion-of-strength
+            { spellID = 279154, unitID = "player", caster = "player", filter = "BUFF" }, -- battle-potion-of-stamina
 
-            -- Ashran 阿什兰
-            { spellID = 168506, unitID = "player", caster = "all", filter = "BUFF" }, -- Ancient Artifact
-            { spellID = 169373, unitID = "player", caster = "all", filter = "BUFF" }, -- Boulder Shield
-            { spellID = 171250, unitID = "player", caster = "all", filter = "BUFF" }, -- Scroll of Speed
-            { spellID = 171249, unitID = "player", caster = "all", filter = "BUFF" }, -- Scroll of Protection
-            { spellID = 161495, unitID = "player", caster = "all", filter = "BUFF" }, -- Star Root Tuber
-            { spellID = 171725, unitID = "player", caster = "all", filter = "BUFF" }, -- Wand of Lightning Shield
-
-            -- Potions: Legion
-            -- 抗魔联军（力）
-            { spellID = 242583, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- 抗魔联军（敏）
-            { spellID = 242584, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- 抗魔联军（智）
-            { spellID = 242586, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- 抗魔联军（临机）
-            { spellID = 243096, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-
-            { spellID = 188029, unitID = "player", caster = "player", filter = "BUFF" }, -- Unbending Potion 不屈药水
-            { spellID = 188330, unitID = "player", caster = "player", filter = "BUFF" }, -- Potion of the Old War 上古战神药水
-            { spellID = 127843, unitID = "player", caster = "player", filter = "BUFF" }, -- Potion of the Deadly GRrace 致命优雅药水
-            { spellID = 229206, unitID = "player", caster = "player", filter = "BUFF" }, -- 延时之力
-            -- Potions: Draenor
-            { spellID = 156423, unitID = "player", caster = "player", filter = "BUFF" }, -- Draenic Agility Potion
-            { spellID = 156426, unitID = "player", caster = "player", filter = "BUFF" }, -- Draenic Intellect Potion
-            { spellID = 156428, unitID = "player", caster = "player", filter = "BUFF" }, -- Draenic Strength Potion
-            { spellID = 156430, unitID = "player", caster = "player", filter = "BUFF" }, -- Draenic Armor Potion
-            -- Potions: Pandaria
-            { spellID = 105697, unitID = "player", caster = "player", filter = "BUFF" }, -- Virmen's Bite (Agility)
-            { spellID = 105706, unitID = "player", caster = "player", filter = "BUFF" }, -- Potion of Mogu Power (Strength)
-            { spellID = 105702, unitID = "player", caster = "player", filter = "BUFF" }, -- Potion of the Jade Serpent (Intellect)
-            { spellID = 125282, unitID = "player", caster = "player", filter = "BUFF" }, -- Kafa Press (Haste)
-            -- Potions: Miscellaneous
-            { spellID = 11392, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Invisibility Potion
-            { spellID = 105707, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Darkwater Potion
-            { spellID = 175833, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Draenic Invisibility Potion
-            { spellID = 175790, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Draenic Swiftness Potion
-            { spellID = 135855, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Potion of Luck
-            { spellID = 80263, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Potion of Treasure Finding
-            { spellID = 2379, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Swiftness Potion
-            -- Potions: Brawler's Guild
-            { spellID = 176107, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Brawler's Draenic Agility Potion
-            { spellID = 176108, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Brawler's Draenic Intellect Potion
-            { spellID = 176109, unitID = "player", caster = "player", filter = "BUFF", absID = true }, -- Brawler's Draenic Strength Potion
+            { spellID = 269853, unitID = "player", caster = "player", filter = "BUFF" }, -- potion-of-rising-death
+            { spellID = 251231, unitID = "player", caster = "player", filter = "BUFF" }, -- steelskin-potion
+            { spellID = 251316, unitID = "player", caster = "player", filter = "BUFF" }, -- potion-of-bursting-blood
 
             -- Raid Amplifiers: General
             { spellID = 90355, unitID = "player", caster = "all", filter = "BUFF" }, -- Ancient Hysteria 远古狂乱
@@ -2948,12 +2909,6 @@ Filger_Spells = {
             { spellID = 2825, unitID = "player", caster = "all", filter = "BUFF" }, -- Bloodlust 嗜血
             { spellID = 32182, unitID = "player", caster = "all", filter = "BUFF" }, -- Heroism 英勇
             { spellID = 80353, unitID = "player", caster = "all", filter = "BUFF" }, -- Time Warp 时间扭曲
-
-            -- Legendaries
-            -- Norgannon's Foresight [Boots]
-            { spellID = 236380, unitID = "player", caster = "all", filter = "BUFF" },
-            -- Zann'esu Journey [Waist]
-            { spellID = 226852, unitID = "player", caster = "all", filter = "BUFF" },
 
             -- Professions
             { spellID = 126389, unitID = "player", caster = "all", filter = "BUFF", absID = true }, -- Goblin Glider [Goblin Glider Kit] 降落伞
@@ -2975,16 +2930,18 @@ Filger_Spells = {
             { spellID = 58984, unitID = "player", caster = "player", filter = "BUFF" },
             -- Stoneform (Dwarf)
             { spellID = 65116, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Fireblood (Dark Iron Dwarf)
+            { spellID = 265221, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Ancestral Call (Mag'har Orcs)
+            { spellID = 274738, unitID = "player", caster = "player", filter = "BUFF" },
 
             -- Zone Buffs
             -- Inactive (Battlegrounds)
             { spellID = 43681, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
             -- Speed (Battlegrounds)
             { spellID = 23451, unitID = "player", caster = "all", filter = "BUFF", absID = true },
-            -- Fel Sludge (Tanaan Jungle)
-            { spellID = 188520, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            -- Strange Feeling (Brawler's Guild)
-            { spellID = 134851, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
+            -- Standing On It (Archaeology)
+            { spellID = 210837, unitID = "player", caster = "all", filter = "BUFF"},
 
             -- Damage Reduction
             -- Life Cocoon
@@ -3034,146 +2991,35 @@ Filger_Spells = {
 
             -- Trinkets
             -- Alchemy Stones
-            -- Strength
-            { spellID = 60229, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Agility
-            { spellID = 60233, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Intellect
-            { spellID = 60234, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Hallow's End
-            -- Drunken Evasiveness (Bonus Armor, Use) [Brawler's Statue]
-            { spellID = 127967, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Reflection of Torment (Attack Power, Proc) [Coren's Cold Chromium]
-            { spellID = 127928, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Now is the time! (Spell Power, Proc) [Mithril Wristwatch]
-            { spellID = 127923, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Essence of Life (Haste, Proc) [Thousand-Year Pickled Egg]
-            { spellID = 127915, unitID = "player", caster = "player", filter = "BUFF" },
-            -- 贾辛的诡计
-            { spellID = 224149, unitID = "player", caster = "player", filter = "BUFF" },
-            -- PvP Trinkets
-            -- Savage Fortitude (Health, Use) [Battlemaster]
-            { spellID = 181706, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Surge of Victory (Strength, Proc)
-            { spellID = 190025, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Rapid Adaptation (Versatility, Use)
-            { spellID = 170397, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Tanking
-            -- Cunning of the Deceiver (Special, Proc) [Shifting Cosmic Sliver]
-            { spellID = 242628, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Living Carapace (Damage Reduction, Use) [Animated Exoskeleton]
-            { spellID = 225033, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Vampiric Aura (Leech, Use) [Fang of Tichcondrius]
-            { spellID = 225130, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Infernal Contract (Damage Reduction, Use) [Infernal Contract]
-            { spellID = 225140, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Sands of Time (DoT, Proc) [Royal Dagger Haft]
-            { spellID = 225720, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shadowy Reflection (Damage Reduction, Proc) [Phantasmal Echo]
-            { spellID = 222479, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Nightmarish Ichor (Versatility, Proc) [Goblet of Nightmarish Ichor]
-            { spellID = 222027, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Wild God's Fury (Health, Use) [Unbridled Fury]
-            { spellID = 221695, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Darkening Soul (Damage Reduction, Proc) [Grotesque Statuette]
-            { spellID = 222209, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Crystalline Body (Damage Reduction, Use) [Shard of Rokmora]
-            { spellID = 214366, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Stance of the Mountain (Damage Reduction, Use) [Talisman of the Cragshaper]
-            { spellID = 214423, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Warlord's Fortitude (Health and Mastery, Proc) [Parjesh's Medallion]
-            { spellID = 214622, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Nerubian Chitin (Armor, Proc) [Impenetrable Nerubian Husk]
-            { spellID = 214494, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Damage [Strength]
-            -- Fiery Enchant (Crit, Proc) [Entwined Elemental Foci]
-            { spellID = 225726, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Frost Enchant (Mastery, Proc) [Entwined Elemental Foci]
-            { spellID = 225729, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Arcane Enchant (Haste, Proc) [Entwined Elemental Foci]
-            { spellID = 225730, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Cleansed Ancient's Blessing (Crit, Proc) [Nature's Call]
-            { spellID = 222517, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Cleansed Wisp's Blessing (Mastery, Proc) [Nature's Call]
-            { spellID = 222518, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Cleansed Sister's Blessing (Haste, Proc) [Nature's Call]
-            { spellID = 222519, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Howl of Ingvar (Crit, Proc) [Memento of Angerboda]
-            { spellID = 214802, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Wail of Svala (Haste, Proc) [Memento of Angerboda]
-            { spellID = 214803, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Dirge of Angerboda (Mastery, Proc) [Memento of Angerboda]
-            { spellID = 214807, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Down Draft (Haste, Proc) [Nightmare Egg Shell]
-            { spellID = 214342, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Valarjar's Path (Primary stat, Use) [Horn of Valor]
-            { spellID = 215956, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Damage [Agility]
-            -- Blood Frenzy (Haste, Proc) [Bloodthirsty Instinct]
-            { spellID = 221796, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Fiery Enchant (Crit, Proc) [Entwined Elemental Foci]
-            { spellID = 225726, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Frost Enchant (Mastery, Proc) [Entwined Elemental Foci]
-            { spellID = 225729, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Arcane Enchant (Haste, Proc) [Entwined Elemental Foci]
-            { spellID = 225730, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Cleansed Ancient's Blessing (Crit, Proc) [Nature's Call]
-            { spellID = 222517, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Cleansed Wisp's Blessing (Mastery, Proc) [Nature's Call]
-            { spellID = 222518, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Cleansed Sister's Blessing (Haste, Proc) [Nature's Call]
-            { spellID = 222519, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Howl of Ingvar (Crit, Proc) [Memento of Angerboda]
-            { spellID = 214802, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Wail of Svala (Haste, Proc) [Memento of Angerboda]
-            { spellID = 214803, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Dirge of Angerboda (Mastery, Proc) [Memento of Angerboda]
-            { spellID = 214807, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Down Draft (Haste, Proc) [Nightmare Egg Shell]
-            { spellID = 214342, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Valarjar's Path (Primary stat, Use) [Horn of Valor]
-            { spellID = 215956, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Damage [Intellect]
-            -- Nefarious Pact (Cast speed, Proc) [Whispers in the Dark]
-            { spellID = 225774, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Valarjar's Path (Primary stat, Use) [Horn of Valor]
-            { spellID = 215956, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Focused Lightning (Mastery, Proc) [Stormsinger Fulmination Charge]
-            { spellID = 215632, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Collapsing Shadow (Agility, Use) [Obelisk of the Void]
-            { spellID = 215476, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Elune's Light (Agility, Use) [Moonlit Prism]
-            { spellID = 215648, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Burning Intensity (Crit, Proc) [Infernal Writ]
-            { spellID = 215816, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Maddening Whispers (Damage, Proc) [Wriggling Sinew]
-            { spellID = 222046, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Healing
-            -- Constellations (Mastery, Haste, or Critical Strike, Proc) [Etraeus' Celestial Map]
-            { spellID = 225136, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Heightened Senses (Haste and Intellect, Proc) [Heightened Senses]
-            { spellID = 221752, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Phased Webbing (Mastery, Proc) [Thrumming Gossamer]
-            { spellID = 215198, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Solemnity (Haste, Proc) [Flask of the Solemn Night]
-            { spellID = 224347, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Ocean's Embrace (Healing, Proc) [Sea Star of the Depthmother]
-            { spellID = 242467, unitID = "player", caster = "player", filter = "BUFF" },
 
-            -- 注射器
-            { spellID = 253260, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Hallow's End
+
+            -- PvP Trinkets
+
+            -- Tanking
+
+            -- Damage [Strength]
+
+            -- Damage [Agility]
+
+            -- Damage [Intellect]
+
+            -- Healing
+
 
             -- Enchants
-            -- Mark of the Claw (Crit and Haste)
-            { spellID = 190909, unitID = "player", caster = "all", filter = "BUFF" },
-            -- Mark of the Heavy Hide (Armor)
-            { spellID = 228399, unitID = "player", caster = "all", filter = "BUFF" },
-            -- Gyroscopic Stabilization
-            { spellID = 235712, unitID = "player", caster = "player", filter = "BUFF" },
-            -- The Shadow Hunter's Regeneration
-            { spellID = 208888, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Sentinel's Sight
-            { spellID = 208913, unitID = "player", caster = "player", filter = "BUFF" },
+            { spellID = 268887, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --quick navigation/迅捷远航
+            { spellID = 268893, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --quick navigation/迅捷远航
+            { spellID = 268854, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --versatile navigation/全能远航
+            { spellID = 268856, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --versatile navigation/全能远航
+            { spellID = 268910, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --stalwart navigation/坚韧远航
+            { spellID = 268911, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --stalwart navigation/坚韧远航
+            { spellID = 268899, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --masterful navigation/精湛远航
+            { spellID = 268898, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --masterful navigation/精湛远航
+            { spellID = 268905, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --deadly navigation/致命远航
+            { spellID = 268904, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --deadly navigation/致命远航
+            { spellID = 267685, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --torrent of elements/元素洪流
+            { spellID = 267612, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --gale force striking/迅击风暴
         },
         {
             Name = "PVE/PVP_DEBUFF",
