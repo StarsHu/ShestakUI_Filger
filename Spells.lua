@@ -3286,502 +3286,101 @@ Filger_Spells = {
             -- Quake
             { spellID = 240447, unitID = "player", caster = "all", filter = "DEBUFF" },
 
-            -- Raids: Legion
-            -- Antorus, the Burning Throne
-            -- Garothi Worldbreaker
-            -- Annihilation
-            { spellID = 244761, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Searing Barrage
-            { spellID = 246369, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Luring Destruction
-            { spellID = 246848, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fel Bombardment
-            { spellID = 246220, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Luring Destruction
-            { spellID = 247159, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Carnage
-            { spellID = 244122, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Felhounds of Sargeras
-            -- Burning Remnant
-            { spellID = 245022, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Smouldering
-            { spellID = 251445, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Burning Maw
-            { spellID = 251448, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Molten Touch
-            { spellID = 244086, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Singed
-            { spellID = 244091, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Desolate Gaze
-            { spellID = 244768, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Desolate Path
-            { spellID = 244767, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Enflame Corruption
-            { spellID = 244471, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Enflamed
-            { spellID = 248815, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Lingering Flames
-            { spellID = 244517, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Decay
-            { spellID = 245098, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Corrupting Maw
-            { spellID = 251447, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Consuming Sphere
-            { spellID = 244131, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Consumed
-            { spellID = 245024, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Weight of Darkness
-            { spellID = 244071, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Siphon Corruption
-            { spellID = 244578, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Siphoned
-            { spellID = 248819, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Antoran High Command
-            -- Entropic Blast
-            { spellID = 245121, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shocked
-            { spellID = 244748, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Warp Field
-            { spellID = 244824, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Exploit Weakness
-            { spellID = 244892, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Psychic Assault
-            { spellID = 244172, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Psychic Scarring
-            { spellID = 244388, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Chaos Pulse
-            { spellID = 244420, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Portal Keeper Hasabel
-            -- Reality Tear
-            { spellID = 244016, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Everburning Light
-            { spellID = 245157, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Hungering Gloom
-            { spellID = 245075, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Oppressive Gloom
-            { spellID = 245240, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fiery Detonation
-            { spellID = 244709, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Acidic Web
-            { spellID = 246208, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Catastrophic Implosion
-            { spellID = 246075, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fel Miasma
-            { spellID = 244826, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Poison Essence
-            { spellID = 246316, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Caustic Slime
-            { spellID = 244849, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Cloying Shadows
-            { spellID = 245118, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Delusions
-            { spellID = 245050, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Corrupt
-            { spellID = 245040, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Felsilk Wrap
-            { spellID = 244926, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Flames of Xoroth
-            { spellID = 244607, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Eonar the Life-Binder
-            -- Rain of Fel
-            { spellID = 248326, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Spear of Doom
-            { spellID = 248861, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Feedback - Targeted
-            { spellID = 249016, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Feedback - Burning Embers
-            { spellID = 249015, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Feedback - Foul Steps
-            { spellID = 249014, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Feedback - Arcane Singularity
-            { spellID = 249017, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Imonar the Soulhunter
-            -- Gathering Power
-            { spellID = 248424, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Sleep Canister
-            { spellID = 247552, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Slumber Gas
-            { spellID = 247565, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shocked
-            { spellID = 250224, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Infernal Rockets
-            { spellID = 248252, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Sever
-            { spellID = 247687, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Charged Blasts
-            { spellID = 247716, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Empowered Shock Lance
-            { spellID = 250255, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Stasis Trap
-            { spellID = 247641, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Kin'garoth
-            -- Infernal Burning
-            { spellID = 233062, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Crashing Comet
-            { spellID = 230345, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Forging Strike
-            { spellID = 244312, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Ruiner
-            { spellID = 246840, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Purging Protocol
-            { spellID = 248061, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Demolish
-            { spellID = 246706, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Varimathras
-            -- Marked Prey
-            { spellID = 244042, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Misery
-            { spellID = 243961, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Echoes of Doom
-            { spellID = 248732, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Necrotic Embrace
-            { spellID = 244093, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- The Coven of Shivarra
-            -- Fiery Strike
-            { spellID = 244899, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Flashfreeze
-            { spellID = 245518, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Chilled Blood
-            { spellID = 245586, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fury of Golganneth
-            { spellID = 246763, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Flames of Khaz'goroth
-            { spellID = 245674, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Spectral Army of Norgannon
-            { spellID = 245910, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Aggramar
-            -- Foe Breaker
-            { spellID = 244291, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Scorching Blaze
-            { spellID = 245995, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Searing Tempest
-            { spellID = 246014, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Blazing Eruption
-            { spellID = 244912, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Scorched Earth
-            { spellID = 247135, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Catalyzed
-            { spellID = 247091, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Unchecked Flame
-            { spellID = 245631, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Molten Remnants
-            { spellID = 245916, unitID = "player", caster = "all", filter = "DEBUFF" },
-
-            -- Tomb of Sargeras
-            -- Goroth
-            -- Shattering Star
-            { spellID = 233279, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Crashing Comet
-            { spellID = 230345, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Burning Armor
-            { spellID = 231363, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Demonic Inquistion
-            -- Unbearable Torment
-            { spellID = 233430, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Soul Corruption
-            { spellID = 248713, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Calcified Quills
-            { spellID = 233431, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Echoing Anguish
-            { spellID = 233983, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Harjatan
-            -- Aqueous Burst
-            { spellID = 231729, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Driven Assault
-            { spellID = 234128, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Dripping Wet
-            { spellID = 241573, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Drenched
-            { spellID = 231770, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Sickly Fixate
-            { spellID = 241600, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Mistress Sassz'ine
-            -- Hydra Shot
-            { spellID = 230139, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Befouling Ink
-            { spellID = 232913, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Sister of the Moon
-            -- Lunar Suffusion
-            { spellID = 234995, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Umbra Suffusion
-            { spellID = 234996, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Discorporate
-            { spellID = 236550, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Moon Burn
-            { spellID = 236519, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Incorporeal Shot
-            { spellID = 236304, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Lunar Beacon
-            { spellID = 236712, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Rapid Shot
-            { spellID = 236596, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- The Desolate Host
-            -- Spear of Anguish
-            { spellID = 235933, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Tormented Cries
-            { spellID = 235989, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Wither
-            { spellID = 236135, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Soulbind
-            { spellID = 236449, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shattering Scream
-            { spellID = 236515, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Maiden of Vigilance
-            -- Unstable Soul
-            { spellID = 240209, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Light Infusion
-            { spellID = 235213, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fel Infusion
-            { spellID = 235240, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Creator's Grace
-            { spellID = 235534, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Demon's Vigor
-            { spellID = 235538, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fallen Avatar
-            -- Dark Mark
-            { spellID = 239739, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shadowy Blades
-            { spellID = 236604, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Kil'jaeden
-            -- Bursting Dreadflame
-            { spellID = 238429, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shadow Reflection: Erupting
-            { spellID = 236710, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shadow Reflection: Wailing
-            { spellID = 236378, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Flaming Orb
-            { spellID = 239253, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Focused Dreadflame
-            { spellID = 238505, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Illidan's Sightless Gaze
-            { spellID = 241721, unitID = "player", caster = "all", filter = "DEBUFF" },
-
-            -- The Emerald Nightmare
-            -- Unstable Decay
-            { spellID = 221028, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Nythendra
-            -- Infested
-            { spellID = 204504, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Rot
-            { spellID = 203096, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Il'gynoth, Heart of Corruption
-            -- Fixate
-            { spellID = 210099, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Spew Corruption
-            { spellID = 208929, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Cursed Blood
-            { spellID = 215128, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Erethe Renferal
-            -- Raking Talons
-            { spellID = 215582, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Wind Burn
-            { spellID = 218519, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Web of Pain
-            { spellID = 215307, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Necrotic Venom
-            { spellID = 215449, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Twisting Shadows
-            { spellID = 210850, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Shimmering Feather
-            { spellID = 212993, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Ursoc
-            -- Focused Gaze
-            { spellID = 198006, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Momentum
-            { spellID = 198108, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Dragons of Nightmare
-            -- Mark of Ysondre
-            { spellID = 203102, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Mark of Taerar
-            { spellID = 203121, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Mark of Emeriss
-            { spellID = 203125, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Mark of Lethon
-            { spellID = 203124, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Nightmare Bloom
-            { spellID = 207681, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Defiled Vines
-            { spellID = 203770, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Volatile Infection
-            { spellID = 203787, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Cenarius
-            -- Creeping Nightmares
-            { spellID = 210279, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Nightmare Javelin
-            { spellID = 211507, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Nightmare Brambles
-            { spellID = 210315, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Scorned Touch
-            { spellID = 211471, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Replenishing Roots
-            { spellID = 211612, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Xavius
-            -- Nightmare Blades
-            { spellID = 211802, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Dream Simulacrum
-            { spellID = 206005, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Tormenting Fixation
-            { spellID = 205771, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Corruption Meteor
-            { spellID = 224508, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Bonds of Terror
-            { spellID = 210451, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Corruption: Descent into Madness
-            { spellID = 208431, unitID = "player", caster = "all", filter = "DEBUFF" },
-
-            --[[--勇气试炼--]]
-            -- 奧丁
-            -- 雷铸之矛
-            { spellID = 228932, unitID = "player", caster = "all", filter = "DEBUFF" },
-            { spellID = 228918, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 烙印
-            { spellID = 227491, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 227490, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 227500, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 227498, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 227499, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            -- P1P2烙印
-            { spellID = 229580, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 229579, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 229583, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 229581, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 229582, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            -- P3烙印
-            { spellID = 231342, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 231311, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 231346, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 231344, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            { spellID = 231345, unitID = "player", caster = "all", filter = "DEBUFF", absID = true },
-            -- 正义风暴
-            { spellID = 227807, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 光耀碎片
-            { spellID = 227781, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 净化火焰
-            { spellID = 227475, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 驱逐之光
-            { spellID = 228029, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 舞动之刃
-            { spellID = 228007, unitID = "player", caster = "all", filter = "DEBUFF" },
-
-            -- 奥丁的考验
-            { spellID = 227626, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 弧光风暴
-            { spellID = 229256, unitID = "target", caster = "all", filter = "BUFF" },
-
-            -- 高姆
-            -- 黑暗宣泄
-            { spellID = 228769, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 烈火黏质
-            { spellID = 228758, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 盐水唾沫
-            { spellID = 228768, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 影舌舔舐
-            { spellID = 228253, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 火舌舔舐
-            { spellID = 228228, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 冰舌舔舐
-            { spellID = 228248, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 吐沫狂怒
-            { spellID = 228174, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 莽撞冲锋
-            { spellID = 227833, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 海拉
-            -- 毒水氧化
-            { spellID = 227982, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 海洋污染
-            { spellID = 228054, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 恶臭溃烂
-            { spellID = 193367, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 腐蚀宝珠
-            { spellID = 229119, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 腐化物
-            { spellID = 228127, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 巨喉之怒
-            { spellID = 228055, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 铁锚猛击
-            { spellID = 228519, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 黑暗水域
-            { spellID = 230197, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 毒水腐蚀
-            { spellID = 227998, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 腐化宝珠
-            { spellID = 230267, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 黑暗仇恨
-            { spellID = 232488, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 腐化脊髓
-            { spellID = 232450, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- 酝酿风暴
-            { spellID = 228803, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 暴怒的风暴元素
-            { spellID = 201119, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 巨喉之怒
-            { spellID = 228300, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 精力
-            { spellID = 203816, unitID = "target", caster = "all", filter = "BUFF" },
-            -- 幽灵怒火
-            { spellID = 228611, unitID = "target", caster = "all", filter = "BUFF" },
-
-            -- BETA:The Nighthold
-            -- Skorpyron
-            -- Broken Shard
-            { spellID = 204284, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Chronomatic Anomaly
-            -- Time Bomb
-            { spellID = 206617, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Trilliax
-            -- Succulent Feast
-            { spellID = 206838, unitID = "player", caster = "all", filter = "BUFF" },
-            -- Stuffed
-            { spellID = 214573, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Sterilize
-            { spellID = 208499, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Arcing Bonds
-            { spellID = 208910, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Spellblade Aluriel
-            -- Mark of Frost
-            { spellID = 212531, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Searing Brand
-            { spellID = 213148, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Tichondrius
-            -- Carrion Plague
-            { spellID = 206480, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Brand of Argus
-            { spellID = 212794, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Essence of Night
-            { spellID = 206466, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Burning Soul
-            { spellID = 216040, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Krosus
-            -- Orb of Destruction
-            { spellID = 205344, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- High Botanist Tel'arn
-            -- Parasitic Fixate
-            { spellID = 218342, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Call of Night
-            { spellID = 218809, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Star Augur Etraeus
-            -- Star Sign: Wolf
-            { spellID = 205445, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Star Sign: Crab
-            { spellID = 205429, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Star Sign: Hunter
-            { spellID = 216345, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Star Sign: Dragon
-            { spellID = 216344, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Icy Ejection
-            { spellID = 206936, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Fel Ejection
-            { spellID = 205649, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Elisande
-            -- Fast Time
-            { spellID = 209166, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Slow Time
-            { spellID = 209165, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Conflexive Burst
-            { spellID = 209598, unitID = "player", caster = "all", filter = "DEBUFF" },
-            -- Gul'dan
-            -- Flames of Sargeras
-            { spellID = 221606, unitID = "player", caster = "all", filter = "DEBUFF" },
+            -- Raids: BFA
+            -- Uldir/奥迪尔 9389
+            -- Taloc/塔洛克
+            { spellID = 275270, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --fixate/锁定
+            { spellID = 270290, unitID = "player", caster = "all", filter = "DEBUFF"},  --blood storm/鲜血风暴
+            { spellID = 278889, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --plasma discharge/赤红迸发
+            { spellID = 278888, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --plasma discharge/赤红迸发
+            { spellID = 271225, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --plasma discharge/赤红迸发
+            { spellID = 271224, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --plasma discharge/赤红迸发
+            { spellID = 275189, unitID = "player", caster = "all", filter = "DEBUFF"},  --hardened arteries/硬化血脉
+            { spellID = 275205, unitID = "player", caster = "all", filter = "DEBUFF"},  --enlarged heart/变大的心脏
+            -- MOTHER/纯净圣母
+            { spellID = 268253, unitID = "player", caster = "all", filter = "DEBUFF"},  --uldir defensive beam/奥迪尔防御射线
+            { spellID = 267787, unitID = "player", caster = "all", filter = "DEBUFF"},  --sanitizing strike/消毒打击
+            { spellID = 268277, unitID = "player", caster = "all", filter = "DEBUFF"},  --purifying flame/净化烈焰
+            { spellID = 268095, unitID = "player", caster = "all", filter = "DEBUFF"},  --cleansing purge/净化荡涤
+            { spellID = 268198, unitID = "player", caster = "all", filter = "DEBUFF"},  --clinging corruption/粘附腐化
+            -- Fetid Devourer/腐臭吞噬者
+            { spellID = 262313, unitID = "player", caster = "all", filter = "DEBUFF"},  --malodorous miasma/恶臭沼气
+            { spellID = 262314, unitID = "player", caster = "all", filter = "DEBUFF"},  --putrid paroxysm/腐烂恶臭
+            { spellID = 262256, unitID = "target", caster = "all", filter = "BUFF"},  --thrashing terror/痛击恐惧
+            { spellID = 262378, unitID = "target", caster = "all", filter = "BUFF"},  --fetid frenzy/腐臭狂暴
+            -- Zek'vozDE/泽克沃兹，恩佐斯的传令官
+            { spellID = 265237, unitID = "player", caster = "all", filter = "DEBUFF"},  --shatter/粉碎
+            { spellID = 265264, unitID = "player", caster = "all", filter = "DEBUFF"},  --void lash/虚空鞭笞
+            { spellID = 265360, unitID = "player", caster = "all", filter = "DEBUFF"},  --roiling deceit/翻腾欺诈
+            { spellID = 264210, unitID = "player", caster = "all", filter = "DEBUFF"},  --jagged mandible/锯齿咬颚
+            { spellID = 265662, unitID = "player", caster = "all", filter = "DEBUFF"},  --corruptors pact/腐化者的契约
+            { spellID = 265646, unitID = "player", caster = "all", filter = "DEBUFF"},  --will of the corruptor/腐化者的意志
+            { spellID = 270620, unitID = "player", caster = "all", filter = "DEBUFF"},  --psionic blast/灵能冲击波
+            { spellID = 270589, unitID = "player", caster = "all", filter = "DEBUFF"},  --void wail/虚空之嚎
+            { spellID = 278218, unitID = "target", caster = "all", filter = "BUFF"},  --void calling/虚空召唤
+            { spellID = 278220, unitID = "target", caster = "all", filter = "BUFF"},  --void trance/虚空超脱
+            -- Vectis/维克提斯
+            { spellID = 265129, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --omega vector/终极菌体
+            { spellID = 267160, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --omega vector/终极菌体
+            { spellID = 267161, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --omega vector/终极菌体
+            { spellID = 265127, unitID = "player", caster = "all", filter = "DEBUFF"},  --lingering infection/持续感染
+            { spellID = 265178, unitID = "player", caster = "all", filter = "DEBUFF"},  --evolving affliction/进化痛苦
+            { spellID = 266948, unitID = "player", caster = "all", filter = "DEBUFF"},  --plague bomb/瘟疫炸弹
+            { spellID = 265212, unitID = "player", caster = "all", filter = "DEBUFF"},  --gestate/育种
+            { spellID = 265206, unitID = "player", caster = "all", filter = "DEBUFF"},  --immunosuppression/免疫力压制
+            { spellID = 274990, unitID = "player", caster = "all", filter = "DEBUFF"},  --bursting lesions/破裂损伤
+            -- Zul/祖尔，重生者
+            { spellID = 273359, unitID = "player", caster = "all", filter = "DEBUFF"},  --shadow barrage/暗影弹幕
+            { spellID = 272018, unitID = "player", caster = "all", filter = "DEBUFF"},  --absorbed in darkness/黑暗吸收
+            { spellID = 274195, unitID = "player", caster = "all", filter = "DEBUFF"},  --corrupted blood/堕落之血
+            { spellID = 274358, unitID = "player", caster = "all", filter = "DEBUFF"},  --rupturing blood/破裂之血
+            { spellID = 273365, unitID = "player", caster = "all", filter = "DEBUFF"},  --dark revelation/黑暗启示
+            { spellID = 273434, unitID = "player", caster = "all", filter = "DEBUFF"},  --pit of despair/绝望深渊
+            { spellID = 276020, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --fixate/锁定
+            { spellID = 269936, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --fixate/锁定
+            { spellID = 274271, unitID = "player", caster = "all", filter = "DEBUFF"},  --deathwish/死亡之愿
+            { spellID = 273432, unitID = "target", caster = "all", filter = "BUFF"},  --bound by shadow/暗影束缚
+            { spellID = 278890, unitID = "player", caster = "all", filter = "DEBUFF"},  --violent hemorrhage/剧烈失血
+            { spellID = 276299, unitID = "player", caster = "all", filter = "DEBUFF"},  --engorged burst/充血爆发
+            { spellID = 273288, unitID = "target", caster = "all", filter = "BUFF"},  --thrumming pulse/婆娑脉动
+            { spellID = 276659, unitID = "target", caster = "all", filter = "BUFF"},  --blood recall/鲜血回响
+            { spellID = 276434, unitID = "target", caster = "all", filter = "BUFF"},  --decaying flesh/腐烂血肉
+            -- Mythrax/拆解者米斯拉克斯
+            { spellID = 274693, unitID = "player", caster = "all", filter = "DEBUFF"},  --essence shear/精华撕裂
+            { spellID = 272146, unitID = "player", caster = "all", filter = "DEBUFF"},  --annihilation/毁灭
+            { spellID = 272536, unitID = "player", caster = "all", filter = "DEBUFF"},  --imminent ruin/毁灭迫近
+            { spellID = 272407, unitID = "player", caster = "all", filter = "DEBUFF"},  --oblivion sphere/湮灭之球
+            { spellID = 273810, unitID = "target", caster = "all", filter = "BUFF"},  --xalzaixs awakening/夏尔扎克斯的觉醒
+            { spellID = 274761, unitID = "target", caster = "all", filter = "BUFF"},  --oblivion veil/湮灭帷幕
+            { spellID = 276900, unitID = "target", caster = "all", filter = "BUFF"},  --critical mass/临界炽焰
+            { spellID = 274113, unitID = "player", caster = "all", filter = "DEBUFF"},  --obliteration beam/湮灭光束
+            { spellID = 274019, unitID = "player", caster = "all", filter = "DEBUFF"},  --mind flay/精神鞭笞
+            { spellID = 279013, unitID = "player", caster = "all", filter = "DEBUFF"},  --essence shatter/精华碎裂
+            { spellID = 279157, unitID = "target", caster = "all", filter = "BUFF"},  --void echoes/虚空回响
+            -- G'huun/戈霍恩
+            { spellID = 272506, unitID = "player", caster = "all", filter = "DEBUFF"},  --explosive corruption/爆炸腐蚀
+            { spellID = 270287, unitID = "player", caster = "all", filter = "DEBUFF"},  --blighted ground/疫病之地
+            { spellID = 267427, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --torment/折磨
+            { spellID = 267430, unitID = "player", caster = "all", filter = "DEBUFF", absID = true},  --torment/折磨
+            { spellID = 267409, unitID = "player", caster = "all", filter = "DEBUFF"},  --dark bargain/黑暗交易
+            { spellID = 269691, unitID = "player", caster = "all", filter = "DEBUFF"},  --mind thrall/意志奴役
+            { spellID = 263482, unitID = "target", caster = "all", filter = "DEBUFF"},  --reorigination blast/重组冲击
+            { spellID = 263372, unitID = "player", caster = "all", filter = "DEBUFF"},  --power matrix/能量矩阵
+            { spellID = 263436, unitID = "player", caster = "all", filter = "DEBUFF"},  --imperfect physiology/不完美的生理机制
+            { spellID = 276834, unitID = "player", caster = "all", filter = "DEBUFF"},  --arcing discharge/弧形释放
+            { spellID = 263321, unitID = "player", caster = "all", filter = "DEBUFF"},  --undulating mass/蠕行苔藓
+            { spellID = 267659, unitID = "player", caster = "all", filter = "DEBUFF"},  --unclean contagion/不洁传染
+            { spellID = 270447, unitID = "target", caster = "all", filter = "BUFF"},  --growing corruption/腐化滋长
+            { spellID = 263227, unitID = "player", caster = "all", filter = "DEBUFF"},  --putrid blood/腐败之血
+            { spellID = 263235, unitID = "player", caster = "all", filter = "DEBUFF"},  --blood feast/鲜血盛宴
+            { spellID = 263284, unitID = "target", caster = "all", filter = "BUFF"},  --blood might/鲜血之力
+            { spellID = 276839, unitID = "player", caster = "all", filter = "DEBUFF"},  --collapse/坍缩
+            { spellID = 267700, unitID = "player", caster = "all", filter = "DEBUFF"},  --gaze of ghuun/戈霍恩的凝视
+            { spellID = 274536, unitID = "player", caster = "all", filter = "DEBUFF"},  --matrix surge/矩阵电涌
+            { spellID = 268174, unitID = "player", caster = "all", filter = "DEBUFF"},  --tendrils of corruption/腐化触须
+            { spellID = 277007, unitID = "player", caster = "all", filter = "DEBUFF"},  --bursting boil/爆裂囊肿
+            { spellID = 267813, unitID = "player", caster = "all", filter = "DEBUFF"},  --blood host/血之宿主
+            { spellID = 267816, unitID = "player", caster = "all", filter = "DEBUFF"},  --dark purpose/黑暗意图
         },
         {
             Name = "T_BUFF",
