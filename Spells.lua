@@ -1649,48 +1649,28 @@ Filger_Spells = {
             IconSize = Misc.IconSize,
             Position = { unpack(FilgerPositions.player_buff_icon) },
 
-            -- Voidform
-            { spellID = 194249, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Dispersion
-            { spellID = 47585, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Power Infusion
-            { spellID = 10060, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Apotheosis
-            { spellID = 200183, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Blessing of T'uure
-            { spellID = 196644, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Al'maiesh, the Cord of Hope(Holy Word: Serenity)
-            { spellID = 211440, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Al'maiesh, the Cord of Hope(Holy Word: Sanctify)
-            { spellID = 211443, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Spirit of Redemption
-            { spellID = 20711, unitID = "player", caster = "all", filter = "BUFF" },
-            -- Divinity
-            { spellID = 197030, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Power of the Naaru
-            { spellID = 196490, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Archangel
-            { spellID = 197862, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Vampiric Embrace
-            { spellID = 15286, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Focused Will
-            { spellID = 45242, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Spectral Guise
-            { spellID = 112833, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Fade
-            { spellID = 586, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Spirit Shell
-            { spellID = 109964, unitID = "player", caster = "player", filter = "BUFF", absID = true },
-            -- Power Word: Shield
-            { spellID = 17, unitID = "player", caster = "all", filter = "BUFF" },
-            -- Renew
-            { spellID = 139, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Power of the Dark Side
-            { spellID = 198069, unitID = "player", caster = "player", filter = "BUFF" },
-            -- 空虚心灵
-            { spellID = 247226, unitID = "player", caster = "player", filter = "BUFF" },
-            -- 全神贯注
-            { spellID = 47536, unitID = "player", caster = "player", filter = "BUFF" },
+            { spellID = 194249, unitID = "player", caster = "all", filter = "DEBUFF"},  --voidform/虚空形态
+            { spellID = 47585, unitID = "player", caster = "all", filter = "DEBUFF"},  --dispersion/消散
+            { spellID = 10060, unitID = "player", caster = "all", filter = "DEBUFF"},  --power infusion/能量灌注
+            { spellID = 200183, unitID = "player", caster = "all", filter = "DEBUFF"},  --apotheosis/神圣化身
+            { spellID = 196644, unitID = "player", caster = "all", filter = "DEBUFF"},  --blessing of tuure/图雷的祝福
+            { spellID = 211440, unitID = "player", caster = "all", filter = "DEBUFF"},  --almaiesh the cord of hope/奥尔麦什-希望之索
+            { spellID = 211443, unitID = "player", caster = "all", filter = "DEBUFF"},  --almaiesh the cord of hope/奥尔麦什-希望之索
+            { spellID = 20711, unitID = "player", caster = "all", filter = "DEBUFF"},  --spirit of redemption/救赎之魂
+            { spellID = 197030, unitID = "player", caster = "all", filter = "DEBUFF"},  --divinity/圣洁
+            { spellID = 196490, unitID = "player", caster = "all", filter = "DEBUFF"},  --power of the naaru/纳鲁之能
+            { spellID = 197862, unitID = "player", caster = "all", filter = "DEBUFF"},  --archangel/天使长
+            { spellID = 15286, unitID = "player", caster = "all", filter = "DEBUFF"},  --vampiric embrace/吸血鬼的拥抱
+            { spellID = 45242, unitID = "player", caster = "all", filter = "DEBUFF"},  --focused will/专注意志
+            { spellID = 112833, unitID = "player", caster = "all", filter = "DEBUFF"},  --spectral guise/幽灵伪装
+            { spellID = 586, unitID = "player", caster = "all", filter = "DEBUFF"},  --fade/渐隐术
+            { spellID = 109964, unitID = "player", caster = "all", filter = "DEBUFF"},  --spirit shell/灵魂护壳
+            { spellID = 17, unitID = "player", caster = "all", filter = "DEBUFF"},  --power word shield/真言术-盾
+            { spellID = 139, unitID = "player", caster = "all", filter = "DEBUFF"},  --renew/恢复
+            { spellID = 198069, unitID = "player", caster = "all", filter = "DEBUFF"},  --power of the dark side/阴暗面之力
+            { spellID = 247226, unitID = "player", caster = "all", filter = "DEBUFF"},  --empty mind/空虚心灵
+            { spellID = 47536, unitID = "player", caster = "all", filter = "DEBUFF"},  --rapture/全神贯注
+            { spellID = 198076, unitID = "player", caster = "player", filter = "BUFF" },  -- 诸罪加身
         },
         {
             Name = "P_PROC_ICON",
@@ -1712,8 +1692,6 @@ Filger_Spells = {
             { spellID = 87160, unitID = "player", caster = "player", filter = "BUFF" },
             -- Twist of Fate
             { spellID = 123254, unitID = "player", caster = "player", filter = "BUFF" },
-            -- 诸罪加身
-            { spellID = 198076, unitID = "player", caster = "player", filter = "BUFF" },
             -- 应许之祈
             { spellID = 253437, unitID = "player", caster = "player", filter = "BUFF" },
             -- 希望永存
@@ -1972,8 +1950,6 @@ Filger_Spells = {
             { spellID = 152151, unitID = "player", caster = "player", filter = "BUFF" },
             -- Cheating Death
             { spellID = 45182, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Blade Flurry
-            { spellID = 13877, unitID = "player", caster = "player", filter = "BUFF" },
             -- Burst of Speed
             { spellID = 108212, unitID = "player", caster = "player", filter = "BUFF" },
             -- Sprint
@@ -1995,18 +1971,20 @@ Filger_Spells = {
             Position = { unpack(FilgerPositions.player_proc_icon) },
 
             -- Buffs
-            -- Jolly Roger
-            { spellID = 199603, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Grand Melee
-            { spellID = 193358, unitID = "player", caster = "player", filter = "BUFF" },
-            -- True Bearing
-            { spellID = 193359, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Buried Treasure
-            { spellID = 199600, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Broadsides
-            { spellID = 193356, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Shark Infested Waters
-            { spellID = 193357, unitID = "player", caster = "player", filter = "BUFF" },
+--            -- Jolly Roger
+--            { spellID = 199603, unitID = "player", caster = "player", filter = "BUFF" },
+--            -- Grand Melee
+--            { spellID = 193358, unitID = "player", caster = "player", filter = "BUFF" },
+--            -- True Bearing
+--            { spellID = 193359, unitID = "player", caster = "player", filter = "BUFF" },
+--            -- Buried Treasure
+--            { spellID = 199600, unitID = "player", caster = "player", filter = "BUFF" },
+--            -- Broadsides
+--            { spellID = 193356, unitID = "player", caster = "player", filter = "BUFF" },
+--            -- Shark Infested Waters
+--            { spellID = 193357, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Blade Flurry
+            { spellID = 13877, unitID = "player", caster = "player", filter = "BUFF" },
             -- 遇刺者之血
             { spellID = 192925, unitID = "player", caster = "player", filter = "BUFF" },
             -- 终极剔骨
@@ -3008,7 +2986,7 @@ Filger_Spells = {
 
 
             -- Enchants
-            { spellID = 268887, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --quick navigation/迅捷远航
+--            { spellID = 268887, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --quick navigation/迅捷远航
             { spellID = 268893, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --quick navigation/迅捷远航
             { spellID = 268854, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --versatile navigation/全能远航
             { spellID = 268856, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --versatile navigation/全能远航
@@ -3016,7 +2994,7 @@ Filger_Spells = {
             { spellID = 268911, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --stalwart navigation/坚韧远航
             { spellID = 268899, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --masterful navigation/精湛远航
             { spellID = 268898, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --masterful navigation/精湛远航
-            { spellID = 268905, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --deadly navigation/致命远航
+--            { spellID = 268905, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --deadly navigation/致命远航
             { spellID = 268904, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --deadly navigation/致命远航
             { spellID = 267685, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --torrent of elements/元素洪流
             { spellID = 267612, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --gale force striking/迅击风暴
