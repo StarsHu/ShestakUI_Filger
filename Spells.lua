@@ -1694,8 +1694,12 @@ Filger_Spells = {
             { spellID = 123254, unitID = "player", caster = "player", filter = "BUFF" },
             -- 应许之祈
             { spellID = 253437, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Power of the Dark Side
+            { spellID = 198069, unitID = "player", caster = "player", filter = "BUFF" },
             -- 希望永存
             { spellID = 253443, unitID = "player", caster = "player", filter = "BUFF" },
+            -- 被诅咒者的低语
+            { spellID = 275726, unitID = "player", caster = "player", filter = "BUFF" },
         },
         {
             Name = "T_DEBUFF_ICON",
@@ -1724,6 +1728,8 @@ Filger_Spells = {
             { spellID = 204197, unitID = "target", caster = "player", filter = "DEBUFF" },
             -- Light of T'uure
             { spellID = 208065, unitID = "target", caster = "player", filter = "BUFF" },
+            -- 教派分歧
+            { spellID = 214621, unitID = "target", caster = "player", filter = "BUFF" },
 
             -- Trinket Effects
             -- Mark of Doom [Prophecy of Fear]
@@ -1950,6 +1956,7 @@ Filger_Spells = {
             { spellID = 152151, unitID = "player", caster = "player", filter = "BUFF" },
             -- Cheating Death
             { spellID = 45182, unitID = "player", caster = "player", filter = "BUFF" },
+            
             -- Burst of Speed
             { spellID = 108212, unitID = "player", caster = "player", filter = "BUFF" },
             -- Sprint
@@ -1989,10 +1996,8 @@ Filger_Spells = {
             { spellID = 192925, unitID = "player", caster = "player", filter = "BUFF" },
             -- 终极剔骨
             { spellID = 197496, unitID = "player", caster = "player", filter = "BUFF" },
-
-            -- Item Sets
-            -- Deathly Shadows (T18)
-            { spellID = 188700, unitID = "player", caster = "player", filter = "BUFF" },
+            -- 蛇眼
+            { spellID = 275863, unitID = "player", caster = "player", filter = "BUFF" },
         },
         {
             Name = "T_DEBUFF_ICON",
@@ -2981,6 +2986,7 @@ Filger_Spells = {
             -- Damage [Agility]
 
             -- Damage [Intellect]
+            { spellID = 278156, unitID = "player", caster = "all", filter = "BUFF", absID=true},  --奥迪尔老一
 
             -- Healing
 
