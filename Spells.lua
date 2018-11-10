@@ -1932,10 +1932,6 @@ Filger_Spells = {
             { spellID = 5277, unitID = "player", caster = "player", filter = "BUFF" },
             -- Envenom
             { spellID = 32645, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Shadow Dance
-            { spellID = 185313, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Symbols of Death
-            { spellID = 212283, unitID = "player", caster = "player", filter = "BUFF" },
             -- Shadow Blades
             { spellID = 121471, unitID = "player", caster = "player", filter = "BUFF" },
             -- Curse of the Dreadblades
@@ -1956,17 +1952,12 @@ Filger_Spells = {
             { spellID = 152151, unitID = "player", caster = "player", filter = "BUFF" },
             -- Cheating Death
             { spellID = 45182, unitID = "player", caster = "player", filter = "BUFF" },
-            
             -- Burst of Speed
             { spellID = 108212, unitID = "player", caster = "player", filter = "BUFF" },
             -- Sprint
             { spellID = 2983, unitID = "player", caster = "player", filter = "BUFF" },
             -- Feint
             { spellID = 1966, unitID = "player", caster = "player", filter = "BUFF" },
-            -- Subterfuge
-            { spellID = 115192, unitID = "player", caster = "player", filter = "BUFF" },
-            -- 深谋远虑
-            { spellID = 193641, unitID = "player", caster = "player", filter = "BUFF" },
         },
         {
             Name = "P_PROC_ICON",
@@ -1998,6 +1989,14 @@ Filger_Spells = {
             { spellID = 197496, unitID = "player", caster = "player", filter = "BUFF" },
             -- 蛇眼
             { spellID = 275863, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Subterfuge
+            { spellID = 115192, unitID = "player", caster = "player", filter = "BUFF" },
+            -- 深谋远虑
+            { spellID = 193641, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Shadow Dance
+            { spellID = 185313, unitID = "player", caster = "player", filter = "BUFF" },
+            -- Symbols of Death
+            { spellID = 212283, unitID = "player", caster = "player", filter = "BUFF" },
         },
         {
             Name = "T_DEBUFF_ICON",
